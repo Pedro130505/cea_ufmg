@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic papers and technical reports published by researchers and students at the Center for Aeronautical Studies (CEA), UFMG School of Engineering.">
+    <title>Publications & Technical Papers | CEA - UFMG</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar-header scrolled" id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="CEA UFMG" class="cea-logo-img">
+            </a>
+            
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-en="Home" data-pt="Home">Home</a></li>
+                    <li><a href="projetos.html" class="nav-link" data-en="Projects" data-pt="Projetos">Projects</a></li>
+                    <li><a href="solucoes.html" class="nav-link" data-en="Solutions" data-pt="Soluções">Solutions</a></li>
+                    <li><a href="homenagem.html" class="nav-link" data-en="Tribute" data-pt="Homenagem">Tribute</a></li>
+                    <li><a href="artigos.html" class="nav-link active" data-en="Publications" data-pt="Artigos">Publications</a></li>
+                    <li><a href="index.html#contato" class="nav-link nav-btn" data-en="Contact" data-pt="Contato">Contact</a></li>
+                    <li class="lang-toggle-li">
+                        <button class="lang-toggle-btn" id="lang-toggle" aria-label="Toggle language">
+                            <span class="lang-opt active" data-lang="en">EN</span>
+                            <span class="lang-divider">|</span>
+                            <span class="lang-opt" data-lang="pt">PT</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Subpage Hero -->
+    <section class="subpage-hero hero-artigos" style="background-image: url('assets/foto1-artigos.png'); background-size: cover; background-position: center;">
+        <div class="hero-overlay"></div>
+        <div class="subpage-hero-container">
+            <span class="hero-badge" data-en="Scientific Output" data-pt="Produção Científica">Scientific Output</span>
+            <h1 class="subpage-title" data-en="Publications & Technical Papers" data-pt="Artigos & Publicações Técnicas">Publications & Technical Papers</h1>
+            <p class="subpage-subtitle" data-en="Peer-reviewed research, conference proceedings, and flight test validations published by CEA researchers and students." data-pt="O conhecimento e as validações físicas do CEA publicadas em congressos e periódicos de engenharia aeroespacial.">Peer-reviewed research, conference proceedings, and flight test validations published by CEA researchers and students.</p>
+        </div>
+    </section>
+
+    <!-- Publications List Section -->
+    <section class="articles-section">
+        <div class="container">
+            
+            <!-- Publication Access Information Banner -->
+            <div style="background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.25); border-radius: 12px; padding: 1.2rem 1.8rem; margin-bottom: 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap;" class="animate-on-scroll">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <i class="fa-solid fa-circle-info" style="font-size: 1.5rem; color: var(--accent-cyan);"></i>
+                    <div>
+                        <h4 style="font-family: var(--font-heading); color: #fff; margin-bottom: 0.2rem;" data-en="Accessing Full-Text Papers" data-pt="Acesso às Publicações Integrais">Accessing Full-Text Papers</h4>
+                        <p style="color: var(--text-muted); font-size: 0.88rem; margin: 0;" data-en="Links direct to the official UFMG DEMEC repository. For specific PDF requests or conference proceedings, please reach out via our contact form." data-pt="Os links direcionam para o repositório oficial do DEMEC-UFMG. Para solicitação de cópias em PDF ou anais de congressos, entre em contato via formulário.">Links direct to the official UFMG DEMEC repository. For specific PDF requests or conference proceedings, please reach out via our contact form.</p>
+                    </div>
+                </div>
+                <a href="index.html#contato" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1rem;" data-en="Request Paper PDF" data-pt="Solicitar Artigo PDF">Request Paper PDF</a>
+            </div>
+            
+            <!-- Filters and Search Bar -->
+            <div class="articles-controls animate-on-scroll">
+                <div class="search-bar-container">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="article-search" placeholder="Search by title, author, or year..." data-en="Search by title, author, or year..." data-pt="Buscar por título, autor ou ano...">
+                </div>
+                
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-category="all" data-en="All" data-pt="Todos">All</button>
+                    <button class="filter-btn" data-category="aerodinamica" data-en="Aerodynamics & CFD" data-pt="Aerodinâmica & CFD">Aerodynamics & CFD</button>
+                    <button class="filter-btn" data-category="estruturas" data-en="Structures & Composites" data-pt="Estruturas & Compósitos">Structures & Composites</button>
+                    <button class="filter-btn" data-category="ensaios" data-en="Flight Tests & Telemetry" data-pt="Ensaios em Voo & Telemetria">Flight Tests & Telemetry</button>
+                </div>
+            </div>
+            
+            <!-- Articles Grid -->
+            <div class="articles-grid animate-on-scroll">
+                
+                <!-- Article 1 -->
+                <div class="article-item" data-category="aerodinamica">
+                    <div class="article-meta">
+                        <span class="article-tag-badge" data-en="Aerodynamics" data-pt="Aerodinâmica">Aerodynamics</span>
+                        <span class="article-year">2025</span>
+                    </div>
+                    <h3 class="article-title">Computational Design and Optimization of Natural Laminar Flow Wing Section for Ultra-Light Aircraft</h3>
+                    <p class="article-authors">Iscold, P., Barbosa, J. R., & Santos, A. L.</p>
+                    <a href="https://demec.ufmg.br/cea/menu.htm" target="_blank" class="article-link" data-en="Access Publication <i class='fa-solid fa-arrow-up-right-from-square'></i>" data-pt="Acessar Publicação <i class='fa-solid fa-arrow-up-right-from-square'></i>">Access Publication <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="article-item" data-category="estruturas">
+                    <div class="article-meta">
+                        <span class="article-tag-badge" data-en="Structures" data-pt="Estruturas">Structures</span>
+                        <span class="article-year">2024</span>
+                    </div>
+                    <h3 class="article-title">Structural Optimization of Carbon-Fiber Sandwich Panels for High-G Aerobatic Wings</h3>
+                    <p class="article-authors">Silva, M. A., & Medeiros, E. B.</p>
+                    <a href="https://demec.ufmg.br/cea/menu.htm" target="_blank" class="article-link" data-en="Access Publication <i class='fa-solid fa-arrow-up-right-from-square'></i>" data-pt="Acessar Publicação <i class='fa-solid fa-arrow-up-right-from-square'></i>">Access Publication <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="article-item" data-category="ensaios">
+                    <div class="article-meta">
+                        <span class="article-tag-badge" data-en="Flight Testing" data-pt="Ensaios em Voo">Flight Testing</span>
+                        <span class="article-year">2023</span>
+                    </div>
+                    <h3 class="article-title">In-Flight Telemetry System and MEMS Calibration for Experimental Aircraft Dynamic Validation</h3>
+                    <p class="article-authors">Carvalho, T. R., & Ribeiro, L. F.</p>
+                    <a href="https://demec.ufmg.br/cea/menu.htm" target="_blank" class="article-link" data-en="Access Publication <i class='fa-solid fa-arrow-up-right-from-square'></i>" data-pt="Acessar Publicação <i class='fa-solid fa-arrow-up-right-from-square'></i>">Access Publication <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="article-item" data-category="aerodinamica">
+                    <div class="article-meta">
+                        <span class="article-tag-badge" data-en="Aerodynamics" data-pt="Aerodinâmica">Aerodynamics</span>
+                        <span class="article-year">2022</span>
+                    </div>
+                    <h3 class="article-title">CFD Boundary Layer Transition Modeling validated by Flight Test Pressure Measurements</h3>
+                    <p class="article-authors">Santos, A. L., & Iscold, P.</p>
+                    <a href="https://demec.ufmg.br/cea/menu.htm" target="_blank" class="article-link" data-en="Access Publication <i class='fa-solid fa-arrow-up-right-from-square'></i>" data-pt="Acessar Publicação <i class='fa-solid fa-arrow-up-right-from-square'></i>">Access Publication <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="article-item" data-category="estruturas">
+                    <div class="article-meta">
+                        <span class="article-tag-badge" data-en="Structures" data-pt="Estruturas">Structures</span>
+                        <span class="article-year">2021</span>
+                    </div>
+                    <h3 class="article-title">Experimental Characterization of Honeycomb Sandwich Core Fracture under Torsional Loading</h3>
+                    <p class="article-authors">Moreira, R. G., & Silva, M. A.</p>
+                    <a href="https://demec.ufmg.br/cea/menu.htm" target="_blank" class="article-link" data-en="Access Publication <i class='fa-solid fa-arrow-up-right-from-square'></i>" data-pt="Acessar Publicação <i class='fa-solid fa-arrow-up-right-from-square'></i>">Access Publication <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Article 6 -->
+                <div class="article-item" data-category="ensaios">
+                    <div class="article-meta">
+                        <span class="article-tag-badge" data-en="Flight Testing" data-pt="Ensaios em Voo">Flight Testing</span>
+                        <span class="article-year">2020</span>
+                    </div>
+                    <h3 class="article-title">Experimental Wind Tunnel Investigation of Wingtip Vortex Generator Geometry on High Aspect-Ratio Gliders</h3>
+                    <p class="article-authors">Gomes, F., Medeiros, E. B., & Silva, H.</p>
+                    <a href="https://demec.ufmg.br/cea/menu.htm" target="_blank" class="article-link" data-en="Access Publication <i class='fa-solid fa-arrow-up-right-from-square'></i>" data-pt="Acessar Publicação <i class='fa-solid fa-arrow-up-right-from-square'></i>">Access Publication <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <!-- Empty search state -->
+            <div class="empty-search" id="empty-search-msg">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p data-en="No publication matches your search query." data-pt="Nenhuma publicação corresponde à sua pesquisa.">No publication matches your search query.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="assets/logo.png" alt="CEA UFMG Logo" class="footer-logo-img">
+                        <div class="footer-brand-text">
+                            CEA <span>UFMG</span>
+                        </div>
+                    </a>
+                    <p class="footer-tagline" data-en="Center for Aeronautical Studies at UFMG School of Engineering. Designing high-performance experimental aircraft and setting FAI world records since 1963." data-pt="Centro de Estudos Aeronáuticos da Escola de Engenharia da UFMG. Projetando aeronaves experimentais de alta performance e quebrando recordes mundiais desde 1963.">Center for Aeronautical Studies at UFMG School of Engineering. Designing high-performance experimental aircraft and setting FAI world records since 1963.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-en="Navigation" data-pt="Navegação">Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html" data-en="Home" data-pt="Página Inicial">Home</a></li>
+                        <li><a href="projetos.html" data-en="Aircraft & Projects" data-pt="Projetos & Protótipos">Aircraft & Projects</a></li>
+                        <li><a href="solucoes.html" data-en="Solutions & Services" data-pt="Soluções Tecnológicas">Solutions & Services</a></li>
+                        <li><a href="homenagem.html" data-en="Prof. Cláudio Barros Tribute" data-pt="Homenagem Prof. Cláudio Barros">Prof. Cláudio Barros Tribute</a></li>
+                        <li><a href="artigos.html" data-en="Scientific Publications" data-pt="Artigos Científicos">Scientific Publications</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-social-info">
+                    <h4 data-en="Social Media" data-pt="Redes Sociais">Social Media</h4>
+                    <p data-en="Stay up to date with new world records and CEA research projects:" data-pt="Fique por dentro dos novos recordes e projetos de pesquisa do CEA:">Stay up to date with new world records and CEA research projects:</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/cea-ufmg/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cea_ufmg/" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p data-en="&copy; 2026 Center for Aeronautical Studies (CEA) - UFMG. All rights reserved." data-pt="&copy; 2026 Centro de Estudos Aeronáuticos (CEA) - UFMG. Todos os direitos reservados.">&copy; 2026 Center for Aeronautical Studies (CEA) - UFMG. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

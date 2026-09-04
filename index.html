@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Center for Aeronautical Studies (CEA) at UFMG School of Engineering. Designing world-record holding experimental aircraft since 1963.">
+    <title>CEA - Center for Aeronautical Studies | UFMG</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar-header" id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="CEA UFMG" class="cea-logo-img">
+            </a>
+            
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link active" data-en="Home" data-pt="Home">Home</a></li>
+                    <li><a href="projetos.html" class="nav-link" data-en="Projects" data-pt="Projetos">Projects</a></li>
+                    <li><a href="solucoes.html" class="nav-link" data-en="Solutions" data-pt="Soluções">Solutions</a></li>
+                    <li><a href="homenagem.html" class="nav-link" data-en="Tribute" data-pt="Homenagem">Tribute</a></li>
+                    <li><a href="artigos.html" class="nav-link" data-en="Publications" data-pt="Artigos">Publications</a></li>
+                    <li><a href="index.html#contato" class="nav-link nav-btn" data-en="Contact" data-pt="Contato">Contact</a></li>
+                    <li class="lang-toggle-li">
+                        <button class="lang-toggle-btn" id="lang-toggle" aria-label="Toggle language">
+                            <span class="lang-opt active" data-lang="en">EN</span>
+                            <span class="lang-divider">|</span>
+                            <span class="lang-opt" data-lang="pt">PT</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hud-telemetry-bar">
+                    <span class="hud-dot"></span>
+                    <span>LAT 19°52'S · LON 43°57'W · ELEV 804M · DEMEC / UFMG · AKAFLIEG PIONEER</span>
+                </div>
+                <h1 class="hero-title" data-en="Pushing the <br><span class='gradient-text'>Boundaries of the Sky</span>" data-pt="Expandindo os <br><span class='gradient-text'>Limites do Céu</span>">Pushing the <br><span class="gradient-text">Boundaries of the Sky</span></h1>
+                <p class="hero-subtitle" data-en="Center of excellence in aeronautical and aerospace engineering at UFMG, developing high-performance experimental aircraft and setting FAI world records since 1963." data-pt="Centro de excelência em engenharia aeronáutica e aeroespacial da UFMG, desenvolvendo aeronaves experimentais de alta performance e quebrando recordes mundiais desde 1963.">Center of excellence in aeronautical and aerospace engineering at UFMG, developing high-performance experimental aircraft and setting FAI world records since 1963.</p>
+                
+                <div class="hero-actions">
+                    <a href="projetos.html" class="btn btn-primary" data-en="Explore Aircraft" data-pt="Conhecer Projetos">Explore Aircraft</a>
+                    <a href="#sobre" class="btn btn-secondary" data-en="Our History" data-pt="Nossa História">Our History</a>
+                </div>
+            </div>
+            
+            <!-- Quick Metrics Grid -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-num">9</div>
+                    <div class="metric-label" data-en="FAI World Records" data-pt="Recordes Mundiais FAI">FAI World Records</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-num">521 <small style="font-size: 0.9rem; font-weight: normal;">km/h</small></div>
+                    <div class="metric-label" data-en="Anequim Speed Record" data-pt="Recorde Mundial Anequim">Anequim Speed Record</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-num">1963</div>
+                    <div class="metric-label" data-en="Pioneering Legacy" data-pt="Tradição & Pioneirismo">Pioneering Legacy</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-num">100%</div>
+                    <div class="metric-label" data-en="Student-Led Engineering" data-pt="Engenharia Discente">Student-Led Engineering</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Aerodynamic wave separator -->
+        <div class="wave-separator">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Quem Somos (About) -->
+    <section class="about-section" id="sobre">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" data-en="History & Philosophy" data-pt="História & Filosofia">History & Philosophy</span>
+                <h2 data-en="About Us" data-pt="Quem Somos">About Us</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid animate-on-scroll">
+                <div class="about-text">
+                    <h3 data-en="The 'Learning by Doing' Tradition" data-pt="A Tradição do 'Aprender Fazendo'">The "Learning by Doing" Tradition</h3>
+                    <p data-en="The <strong>Center for Aeronautical Studies (CEA)</strong> is a state-of-the-art research laboratory within the Department of Mechanical Engineering at UFMG School of Engineering. Founded in 1963 by the visionary Professor Cláudio Pinto de Barros, CEA pioneered the adoption of the German <em>Akaflieg</em> academic model in Brazil." data-pt="O <strong>Centro de Estudos Aeronáuticos (CEA)</strong> é um laboratório de pesquisa e desenvolvimento de ponta do Departamento de Engenharia Mecânica da Escola de Engenharia da UFMG. Fundado em 1963 pelo visionário Professor Cláudio Pinto de Barros, o CEA tornou-se pioneiro nacional na adoção do modelo acadêmico das <em>Akafliegs</em> alemãs.">The <strong>Center for Aeronautical Studies (CEA)</strong> is a state-of-the-art research laboratory within the Department of Mechanical Engineering at UFMG School of Engineering. Founded in 1963 by the visionary Professor Cláudio Pinto de Barros, CEA pioneered the adoption of the German <em>Akaflieg</em> academic model in Brazil.</p>
+                    <p data-en="Here, engineering students do not just absorb classroom theory; they participate directly in all phases of experimental aircraft creation: aerodynamic design, complex FEA structural analysis, advanced composite manufacturing (carbon fiber and Nomex honeycomb cores), avionics and propulsion system integration, and flight test campaigns." data-pt="Aqui, os estudantes de engenharia não apenas absorvem a teoria em salas de aula, mas participam diretamente de todas as fases da criação de aeronaves experimentais: concepção aerodinâmica, cálculo estrutural complexo, manufatura avançada em materiais compostos (fibra de carbono, colmeia nomex), montagem de sistemas eletrônicos e de propulsão, e campanhas de ensaios em voo reais.">Here, engineering students do not just absorb classroom theory; they participate directly in all phases of experimental aircraft creation: aerodynamic design, complex FEA structural analysis, advanced composite manufacturing (carbon fiber and Nomex honeycomb cores), avionics and propulsion system integration, and flight test campaigns.</p>
+                    <p data-en="This hands-on philosophy produces highly qualified engineers sought after globally, with alumni currently leading teams at Embraer, Boeing, Airbus, and Red Bull Air Race teams." data-pt="Esta filosofia desenvolve profissionais altamente qualificados e disputados pelo mercado internacional, com ex-alunos hoje liderando equipes na Embraer, Boeing, Airbus e equipes da Red Bull Air Race.">This hands-on philosophy produces highly qualified engineers sought after globally, with alumni currently leading teams at Embraer, Boeing, Airbus, and Red Bull Air Race teams.</p>
+                </div>
+                <div class="about-image-card">
+                    <div class="about-glow"></div>
+                    <div class="card-inner">
+                        <img src="assets/foto1-home.png" alt="Anequim aircraft taking off" class="about-img">
+                        <div class="image-overlay-info">
+                            <h4>CEA-311 Anequim</h4>
+                            <p data-en="Digitally engineered and manufactured with robotic precision at UFMG." data-pt="Projetado virtualmente e fabricado com precisão robótica na UFMG.">Digitally engineered and manufactured with robotic precision at UFMG.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Technological Competence Matrix -->
+            <div class="blueprint-bg animate-on-scroll" style="padding: 2.5rem; margin-top: 3rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); letter-spacing: 0.1em;">// TECHNOLOGICAL COMPETENCE MATRIX</span>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.4rem; color: #fff; margin-top: 0.2rem;" data-en="Full Aircraft Development Lifecycle" data-pt="Ciclo Completo de Desenvolvimento de Aeronaves">Full Aircraft Development Lifecycle</h4>
+                    </div>
+                    <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2); padding: 0.3rem 0.8rem; border-radius: 20px;">DEMEC-UFMG PROTOCOL</span>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
+                    <div style="background: rgba(12, 22, 38, 0.7); border-left: 3px solid var(--accent); padding: 1.2rem; border-radius: 0 8px 8px 0;">
+                        <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan);">[PHASE 01 · CONCEPT]</span>
+                        <h5 style="font-family: var(--font-heading); font-size: 1.1rem; color: #fff; margin: 0.4rem 0;" data-en="CFD & NLF Aerodynamics" data-pt="CFD & Aerodinâmica NLF">CFD & NLF Aerodynamics</h5>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;" data-en="Laminar transition modeling and drag polar calculation using RANS CFD and wind tunnel testing." data-pt="Modelagem de transição laminar e polares de arrasto com métodos RANS e túnel de vento soprado.">Laminar transition modeling and drag polar calculation using RANS CFD and wind tunnel testing.</p>
+                    </div>
+                    <div style="background: rgba(12, 22, 38, 0.7); border-left: 3px solid #38bdf8; padding: 1.2rem; border-radius: 0 8px 8px 0;">
+                        <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan);">[PHASE 02 · STRUCTURES]</span>
+                        <h5 style="font-family: var(--font-heading); font-size: 1.1rem; color: #fff; margin: 0.4rem 0;" data-en="Composites & FEA Analysis" data-pt="Compósitos & Nomex FEA">Composites & FEA Analysis</h5>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;" data-en="Carbon-fiber vacuum infusion over Nomex honeycomb, aeroelastic calculation, and flutter prevention." data-pt="Laminação a vácuo em fibra de carbono, cálculo aeroelástico e prevenção de flutter.">Carbon-fiber vacuum infusion over Nomex honeycomb, aeroelastic calculation, and flutter prevention.</p>
+                    </div>
+                    <div style="background: rgba(12, 22, 38, 0.7); border-left: 3px solid #22c55e; padding: 1.2rem; border-radius: 0 8px 8px 0;">
+                        <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan);">[PHASE 03 · VALIDATION]</span>
+                        <h5 style="font-family: var(--font-heading); font-size: 1.1rem; color: #fff; margin: 0.4rem 0;" data-en="Flight Testing & Telemetry" data-pt="Ensaios em Voo & Telemetria">Flight Testing & Telemetry</h5>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;" data-en="Instrumented flight campaigns utilizing CAN-bus telemetry and high-rate inertial data acquisition." data-pt="Campanhas de voo reais instrumentadas com barramento CAN e aquisição inercial de alta taxa.">Instrumented flight campaigns utilizing CAN-bus telemetry and high-rate inertial data acquisition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Showcase -->
+    <section class="fleet-section" id="frota">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" data-en="Engineering in Action" data-pt="Engenharia em Ação">Engineering in Action</span>
+                <h2 data-en="Featured Aircraft" data-pt="Projetos de Destaque">Featured Aircraft</h2>
+                <div class="section-line"></div>
+                <p class="section-desc" data-en="A quick showcase of our record-breaking aircraft. Explore technical specifications and flight history." data-pt="Uma vitrine rápida de nossos projetos recordistas. Explore o histórico e dados de voo completos de cada um deles.">A quick showcase of our record-breaking aircraft. Explore technical specifications and flight history.</p>
+            </div>
+            
+            <div class="fleet-grid-index animate-on-scroll" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin-top: 3rem;">
+                <!-- Card 1: Anequim -->
+                <div class="project-card-index" style="background: var(--bg-panel-solid); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; position: relative;">
+                        <img src="assets/foto7-projetos.jpeg" alt="CEA-311 Anequim" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span style="position: absolute; top: 1rem; right: 1rem; background: var(--accent); color: var(--text-white); font-size: 0.75rem; font-weight: 600; padding: 0.3rem 0.8rem; border-radius: 20px;">CEA-311</span>
+                    </div>
+                    <div style="padding: 1.8rem;">
+                        <h3 style="font-family: var(--font-heading); margin-bottom: 0.8rem;">Anequim</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.5; margin-bottom: 1.5rem;" data-en="Full carbon-fiber race plane holding 5 official FAI world speed records." data-pt="Aeronave de corrida construída inteiramente em fibra de carbono. Detém 5 recordes mundiais homologados pela FAI.">Full carbon-fiber race plane holding 5 official FAI world speed records.</p>
+                        <a href="projetos.html" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1rem; width: 100%; text-align: center; display: block;" data-en="View Specifications" data-pt="Ver Ficha Técnica">View Specifications</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: CEA-308 -->
+                <div class="project-card-index" style="background: var(--bg-panel-solid); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; position: relative;">
+                        <img src="assets/foto6-projetos.jpeg" alt="CEA-308" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span style="position: absolute; top: 1rem; right: 1rem; background: var(--accent); color: var(--text-white); font-size: 0.75rem; font-weight: 600; padding: 0.3rem 0.8rem; border-radius: 20px;">CEA-308</span>
+                    </div>
+                    <div style="padding: 1.8rem;">
+                        <h3 style="font-family: var(--font-heading); margin-bottom: 0.8rem;">CEA-308</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.5; margin-bottom: 1.5rem;" data-en="Lightweight airplane establishing 4 FAI world speed and climb rate records piloted by Gunter Penz." data-pt="Ultraleve que estabeleceu 4 recordes mundiais de velocidade e taxa de subida sob pilotagem de Gunter Penz.">Lightweight airplane establishing 4 FAI world speed and climb rate records piloted by Gunter Penz.</p>
+                        <a href="projetos.html" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1rem; width: 100%; text-align: center; display: block;" data-en="View Specifications" data-pt="Ver Ficha Técnica">View Specifications</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Minuano -->
+                <div class="project-card-index" style="background: var(--bg-panel-solid); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; position: relative;">
+                        <img src="assets/foto3-projetos.jpg" alt="Minuano Glider" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span style="position: absolute; top: 1rem; right: 1rem; background: var(--accent); color: var(--text-white); font-size: 0.75rem; font-weight: 600; padding: 0.3rem 0.8rem; border-radius: 20px;">CB-2</span>
+                    </div>
+                    <div style="padding: 1.8rem;">
+                        <h3 style="font-family: var(--font-heading); margin-bottom: 0.8rem;">CB-2 Minuano</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.5; margin-bottom: 1.5rem;" data-en="Historic sailplane designed by Prof. Cláudio Barros featuring an exceptional glide ratio of 38:1." data-pt="Planador histórico projetado pelo Prof. Cláudio Barros com extraordinária razão de planeio (38:1) para os anos 60.">Historic sailplane designed by Prof. Cláudio Barros featuring an exceptional glide ratio of 38:1.</p>
+                        <a href="projetos.html" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1rem; width: 100%; text-align: center; display: block;" data-en="View Specifications" data-pt="Ver Ficha Técnica">View Specifications</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Areas -->
+    <section class="research-section" id="pesquisas">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" data-en="Technological Frontiers" data-pt="Fronteiras Tecnológicas">Technological Frontiers</span>
+                <h2 data-en="Research & Development" data-pt="Áreas de Pesquisa & Desenvolvimento">Research & Development</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="research-grid animate-on-scroll">
+                <div class="research-card">
+                    <div class="research-icon"><i class="fa-solid fa-wind"></i></div>
+                    <h3 data-en="Wind Tunnel & Aerodynamics" data-pt="Túnel de Vento & Aerodinâmica">Wind Tunnel & Aerodynamics</h3>
+                    <p data-en="Subsonic wind tunnel testing on scaled models and full-scale wings for laminar boundary layer characterization." data-pt="Ensaios aerodinâmicos em modelos reduzidos e asas reais utilizando a infraestrutura de túneis de vento soprado da Escola de Engenharia para validação de fluxos laminares.">Subsonic wind tunnel testing on scaled models and full-scale wings for laminar boundary layer characterization.</p>
+                    <span class="research-badge" data-en="Experimental Aerodynamics" data-pt="Aerodinâmica Experimental">Experimental Aerodynamics</span>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3 data-en="Flight Testing & Telemetry" data-pt="Ensaios em Voo & Telemetria">Flight Testing & Telemetry</h3>
+                    <p data-en="Embedded high-precision sensor telemetry systems to acquire dynamic accelerations, pressure distributions, and air data in real flight." data-pt="Desenvolvimento de sistemas de aquisição de dados e sensores embarcados de altíssima precisão para mensurar acelerações, pressões e ângulos aerodinâmicos dinamicamente durante voos reais.">Embedded high-precision sensor telemetry systems to acquire dynamic accelerations, pressure distributions, and air data in real flight.</p>
+                    <span class="research-badge" data-en="Flight Instrumentation" data-pt="Instrumentação Dinâmica">Flight Instrumentation</span>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon"><i class="fa-solid fa-cubes"></i></div>
+                    <h3 data-en="Composite Structures & FEA" data-pt="Estruturas em Compósitos">Composite Structures & FEA</h3>
+                    <p data-en="Optimization of carbon-fiber sandwich laminates using advanced FEA computational methods for high-G load capacity." data-pt="Otimização de laminados de fibra de carbono utilizando métodos computacionais avançados (Elementos Finitos) para suportar altas cargas com pesos incrivelmente reduzidos.">Optimization of carbon-fiber sandwich laminates using advanced FEA computational methods for high-G load capacity.</p>
+                    <span class="research-badge" data-en="Structural Analysis" data-pt="Análise Estrutural">Structural Analysis</span>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon"><i class="fa-solid fa-helicopter"></i></div>
+                    <h3 data-en="Autonomous Aerial Systems (UAS)" data-pt="Sistemas Autônomos (UAVs)">Autonomous Aerial Systems (UAS)</h3>
+                    <p data-en="Applied research on drone navigation, custom flight controllers, and unmanned aerial vehicles for civil and defense missions." data-pt="Pesquisa aplicada à navegação de drones, pilotos automáticos customizados e aeronaves não tripuladas para missões civis e de defesa.">Applied research on drone navigation, custom flight controllers, and unmanned aerial vehicles for civil and defense missions.</p>
+                    <span class="research-badge" data-en="Aerial Robotics" data-pt="Robótica Aérea">Aerial Robotics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Airfoil Simulation (Micro-feature) -->
+    <section class="simulation-section" id="simulador">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" data-en="Interactive Laboratory" data-pt="Laboratório Interativo">Interactive Laboratory</span>
+                <h2 data-en="Interactive Airfoil Simulator" data-pt="Simulador de Aerofólio">Interactive Airfoil Simulator</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="simulation-layout animate-on-scroll">
+                <div class="sim-controls">
+                    <h3 data-en="Airflow Dynamic Simulation" data-pt="Simulação de Fluxo de Ar">Airflow Dynamic Simulation</h3>
+                    <p class="sim-intro" data-en="Adjust the <strong>Angle of Attack (AoA)</strong> below to observe real-time changes in lift, drag, and aerodynamic <strong>Stall</strong>." data-pt="Ajuste o <strong>Ângulo de Ataque (AoA)</strong> do aerofólio abaixo e observe as mudanças de sustentação, arrasto e o fenômeno aerodinâmico do <strong>Estol (Stall)</strong> em tempo real.">Adjust the <strong>Angle of Attack (AoA)</strong> below to observe real-time changes in lift, drag, and aerodynamic <strong>Stall</strong>.</p>
+                    
+                    <div class="control-group">
+                        <label for="aoa-slider"><span data-en="Angle of Attack" data-pt="Ângulo de Ataque">Angle of Attack</span>: <span id="aoa-value">4</span>°</label>
+                        <input type="range" id="aoa-slider" min="-10" max="22" value="4" step="1">
+                    </div>
+                    
+                    <div class="telemetry-panel">
+                        <div class="tel-item">
+                            <span class="tel-label" data-en="Lift Coeff. (Cl):" data-pt="Coef. Sustentação (Cl):">Lift Coeff. (Cl):</span>
+                            <span class="tel-val" id="cl-val">0.45</span>
+                        </div>
+                        <div class="tel-item">
+                            <span class="tel-label" data-en="Drag Coeff. (Cd):" data-pt="Coef. Arrasto (Cd):">Drag Coeff. (Cd):</span>
+                            <span class="tel-val" id="cd-val">0.02</span>
+                        </div>
+                        <div class="tel-item">
+                            <span class="tel-label" data-en="Efficiency (L/D):" data-pt="Eficiência (L/D):">Efficiency (L/D):</span>
+                            <span class="tel-val" id="ld-val">22.5</span>
+                        </div>
+                        <div class="tel-item">
+                            <span class="tel-label" data-en="Aerodynamic State:" data-pt="Estado Aerodinâmico:">Aerodynamic State:</span>
+                            <span class="tel-val status-normal" id="status-val">Laminar Flow</span>
+                        </div>
+                    </div>
+                    
+                    <div class="explain-box" id="explain-box">
+                        <p data-en="Airflow moves smoothly over the profile. Pressure differential generates sustainable lift force for flight." data-pt="O fluxo de ar corre suavemente pelo perfil. A diferença de velocidade gera menor pressão acima da asa, gerando a força de sustentação sustentável para o voo.">Airflow moves smoothly over the profile. Pressure differential generates sustainable lift force for flight.</p>
+                    </div>
+                </div>
+                
+                <div class="sim-visual">
+                    <div class="canvas-container">
+                        <canvas id="airfoil-canvas" width="600" height="350"></canvas>
+                        <div class="canvas-overlay" id="stall-warning">STALL WARNING!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Active Projects & Industrial Innovation Showcase -->
+    <section class="today-showcase-section" id="cea-hoje" style="padding: 6rem 0; background: var(--bg-surface); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" data-en="Active R&D" data-pt="Desenvolvimento Ativo">Active R&D</span>
+                <h2 data-en="Current Developments & Innovation" data-pt="Novos Projetos & Inovação">Current Developments & Innovation</h2>
+                <div class="section-line"></div>
+                <p class="section-desc" data-en="Industry co-development partnerships and next-generation experimental aircraft engineered at UFMG." data-pt="Conheça o novo momento do laboratório: grandes parcerias industriais e o desenvolvimento de aeronaves de última geração.">Industry co-development partnerships and next-generation experimental aircraft engineered at UFMG.</p>
+            </div>
+
+            <div class="today-highlight-grid animate-on-scroll" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-top: 3rem;">
+                
+                <!-- Highlight 1: Aeromot -->
+                <div class="active-card" style="background: var(--bg-panel); border: 1px solid var(--border-glow); border-radius: 16px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; backdrop-filter: blur(10px);">
+                    <div>
+                        <div style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.8rem; margin-bottom: 0.8rem;">// INDUSTRIAL COOPERATION</div>
+                        <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: #fff; margin-bottom: 1rem;" data-en="Strategic Partnership with Aeromot" data-pt="Parceria Estratégica com a Aeromot">Strategic Partnership with Aeromot</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;" data-en="Joint engineering of a high-performance twin-engine aircraft featuring bioethanol propulsion option." data-pt="Desenvolvimento conjunto de uma nova aeronave bimotora de alta performance com opção de propulsão sustentável a etanol, aliando sustentabilidade energética e engenharia aeronáutica nacional.">
+                            Joint engineering of a high-performance twin-engine aircraft featuring bioethanol propulsion option.
+                        </p>
+                    </div>
+                    <a href="solucoes.html" class="btn btn-secondary" style="align-self: flex-start; font-size: 0.88rem;" data-en="Explore Solutions" data-pt="Conhecer Soluções">Explore Solutions</a>
+                </div>
+
+                <!-- Highlight 2: CEA-314 -->
+                <div class="active-card" style="background: var(--bg-panel); border: 1px solid var(--border-glow); border-radius: 16px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; backdrop-filter: blur(10px);">
+                    <div>
+                        <div style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.8rem; margin-bottom: 0.8rem;">// NEW PROTOTYPE IN PROGRESS</div>
+                        <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: #fff; margin-bottom: 1rem;" data-en="CEA-314 Tandem Trainer" data-pt="Projeto CEA-314 Tandem">CEA-314 Tandem Trainer</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;" data-en="Full carbon-fiber tandem aerobatic trainer synthesizing CEA heritage and Joseph Kovács design legacy." data-pt="Aeronave biplace em tandem 100% fibra de carbono para treinamento e acrobacia aérea avançada.">
+                            Full carbon-fiber tandem aerobatic trainer synthesizing CEA heritage and Joseph Kovács design legacy.
+                        </p>
+                    </div>
+                    <a href="projetos.html" class="btn btn-primary" style="align-self: flex-start; font-size: 0.88rem;" data-en="View All Projects" data-pt="Ver Todos os Projetos">View All Projects</a>
+                </div>
+
+            </div>
+
+            <!-- Partners & Supporters -->
+            <div class="partners-block animate-on-scroll" style="margin-top: 4.5rem;">
+                <h3 data-en="Institutional Partners & Supporters" data-pt="Parceiros Institucionais & Apoiadores">Institutional Partners & Supporters</h3>
+                <div class="partners-logos">
+                    <div class="partner-logo">DEMEC</div>
+                    <div class="partner-logo">UFMG School of Engineering</div>
+                    <div class="partner-logo">Aeromot</div>
+                    <div class="partner-logo">Embraer</div>
+                    <div class="partner-logo">CNPq</div>
+                    <div class="partner-logo">FAPEMIG</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Interactive Module 1: Flight Envelope & Speed Comparator -->
+    <section class="speed-comparator-section" id="comparador-velocidade">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" data-en="Flight Performance" data-pt="Engenharia Comparada">Flight Performance</span>
+                <h2 data-en="Flight Envelope & World Records" data-pt="Envelope de Voo & Recordes Mundiais">Flight Envelope & World Records</h2>
+                <div class="section-line"></div>
+                <p class="section-desc" data-en="Drag the speed throttle or select an aircraft to compare aerodynamic performance across CEA generations." data-pt="Arraste a manete de velocidade ou selecione uma aeronave para comparar o desempenho aerodinâmico de cada geração do CEA.">Drag the speed throttle or select an aircraft to compare aerodynamic performance across CEA generations.</p>
+            </div>
+
+            <div class="comparator-box animate-on-scroll">
+                <div class="comparator-top-bar">
+                    <div>
+                        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); display: block; margin-bottom: 0.3rem;">CALIBRATED AIRSPEED (CAS)</span>
+                        <div class="gauge-digital-display">
+                            <span class="gauge-speed-val" id="digital-speed-num">521</span>
+                            <span class="gauge-unit">KM/H</span>
+                            <span style="font-family: var(--font-mono); font-size: 1.2rem; color: var(--text-dim);">/</span>
+                            <span style="font-family: var(--font-mono); font-size: 1.5rem; color: var(--text-muted); font-weight: 700;" id="digital-kts-num">281</span>
+                            <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-dim);">KTS</span>
+                        </div>
+                    </div>
+                    <div style="text-align: right;">
+                        <span class="gauge-mach-badge" id="digital-mach-badge">MACH 0.43</span>
+                        <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-dim); display: block; margin-top: 0.4rem;">SEA LEVEL · ISA +0°C</span>
+                    </div>
+                </div>
+
+                <!-- Throttle Slider -->
+                <div class="speed-slider-wrap">
+                    <label for="speed-throttle-slider" style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); margin-bottom: 0.5rem;">
+                        <span>0 KM/H (STALL)</span>
+                        <span data-en="THROTTLE CONTROL / HOMOLOGATED TOP SPEED" data-pt="MANETE DE VELOCIDADE / VELOCIDADE MÁXIMA HOMOLOGADA">THROTTLE CONTROL / HOMOLOGATED TOP SPEED</span>
+                        <span>600 KM/H (VNE)</span>
+                    </label>
+                    <input type="range" id="speed-throttle-slider" min="80" max="550" value="521" step="1">
+                </div>
+
+                <!-- Aircraft Select Track -->
+                <div class="aircraft-selector-track">
+                    <button class="ac-select-btn" data-ac="gaivota">
+                        <span class="ac-btn-tag">1964 · WOOD</span>
+                        <div class="ac-btn-name">CB-1 Gaivota</div>
+                        <div class="ac-btn-speed">120 km/h · 20:1</div>
+                    </button>
+                    <button class="ac-select-btn" data-ac="minuano">
+                        <span class="ac-btn-tag">1974 · CHAMPION</span>
+                        <div class="ac-btn-name">CB-2 Minuano</div>
+                        <div class="ac-btn-speed">210 km/h · 38:1</div>
+                    </button>
+                    <button class="ac-select-btn" data-ac="cea308">
+                        <span class="ac-btn-tag">2001 · 4× RECORDS</span>
+                        <div class="ac-btn-name">CEA-308</div>
+                        <div class="ac-btn-speed">360 km/h · 80 HP</div>
+                    </button>
+                    <button class="ac-select-btn active" data-ac="anequim">
+                        <span class="ac-btn-tag">2015 · 5× RECORDS</span>
+                        <div class="ac-btn-name">Anequim</div>
+                        <div class="ac-btn-speed">521 km/h · CARBON</div>
+                    </button>
+                    <button class="ac-select-btn" data-ac="cea314">
+                        <span class="ac-btn-tag">2026 · IN DESIGN</span>
+                        <div class="ac-btn-name">CEA-314 Tandem</div>
+                        <div class="ac-btn-speed">420 km/h · ACRO</div>
+                    </button>
+                    <button class="ac-select-btn" data-ac="aeromot">
+                        <span class="ac-btn-tag">INDUSTRIAL R&D</span>
+                        <div class="ac-btn-name">Aeromot Twin</div>
+                        <div class="ac-btn-speed">480 km/h · ETHANOL</div>
+                    </button>
+                </div>
+
+                <!-- Telemetry Panel -->
+                <div class="telemetry-detail-panel">
+                    <div>
+                        <div style="display: flex; gap: 0.8rem; align-items: center; margin-bottom: 0.6rem;">
+                            <span class="hud-dot"></span>
+                            <h3 style="font-family: var(--font-heading); font-size: 1.7rem; color: #fff;" id="comp-spec-name">CEA-311 Anequim</h3>
+                            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-cyan); background: rgba(59,130,246,0.15); border: 1px solid rgba(59,130,246,0.3); padding: 0.2rem 0.6rem; border-radius: 4px;" id="comp-spec-code">Absolute Record Holder (2015)</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.2rem;" id="comp-spec-desc">
+                            Pinnacle of student aerospace engineering: the fastest single-engine piston aircraft under 500kg in history.
+                        </p>
+                        <div style="font-family: var(--font-mono); font-size: 0.82rem; color: #f59e0b; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.25); padding: 0.5rem 0.9rem; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            <i class="fa-solid fa-trophy"></i>
+                            <span id="comp-spec-record">5× FAI World Record Holder (521.08 km/h)</span>
+                        </div>
+                    </div>
+
+                    <div class="flight-spec-grid">
+                        <div class="flight-spec-item">
+                            <span class="f-spec-label">// GLIDE RATIO (L/D)</span>
+                            <span class="f-spec-val" id="comp-spec-glide">16:1</span>
+                        </div>
+                        <div class="flight-spec-item">
+                            <span class="f-spec-label">// STRUCTURAL MATERIAL</span>
+                            <span class="f-spec-val" id="comp-spec-material" style="font-size: 0.95rem;">100% Carbon / Nomex</span>
+                        </div>
+                        <div class="flight-spec-item">
+                            <span class="f-spec-label">// PROPULSION ENGINE</span>
+                            <span class="f-spec-val" id="comp-spec-engine" style="font-size: 0.95rem;">Lycoming IO-360 (220 HP)</span>
+                        </div>
+                        <div class="flight-spec-item">
+                            <span class="f-spec-label">// STATUS</span>
+                            <span class="f-spec-val" style="color: #22c55e;">FAI Certified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flight Log & Workshop Gallery -->
+    <section class="flight-log-section" style="padding: 6rem 0;">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" data-en="Workshop Logbook" data-pt="Acervo Fotográfico & Ensaios">Workshop Logbook</span>
+                <h2 data-en="Flight & Fabrication Log" data-pt="Diário de Bordo da Oficina">Flight & Fabrication Log</h2>
+                <div class="section-line"></div>
+                <p class="section-desc" data-en="Authentic records of manufacturing, flutter testing, runway operations, and world records." data-pt="Registros autênticos de fabricação, ensaios de flutter, preparação de pista e quebra de recordes mundiais.">Authentic records of manufacturing, flutter testing, runway operations, and world records.</p>
+            </div>
+
+            <div class="flight-log-grid animate-on-scroll">
+                <!-- Card 1 -->
+                <div class="flight-log-card">
+                    <div class="flight-log-img-wrap">
+                        <img src="assets/foto6-projetos.jpeg" alt="CEA-308 on runway" class="zoomable-img">
+                        <span class="flight-log-meta-tag">[SNKF · CURVELO / MG]</span>
+                    </div>
+                    <div class="flight-log-body">
+                        <div>
+                            <h4 data-en="CEA-308 Flight Line" data-pt="CEA-308 em Linha de Voo">CEA-308 Flight Line</h4>
+                            <p data-en="Pre-flight inspection and static pitot check prior to FAI C-1.a/0 world record runs." data-pt="Inspeção pré-voo e checagem de pitot estático antes da decolagem para homologação dos 4 recordes mundiais.">Pre-flight inspection and static pitot check prior to FAI C-1.a/0 world record runs.</p>
+                        </div>
+                        <div class="flight-log-footer">
+                            <span>PILOT: GUNTER PENZ</span>
+                            <span>RECORD: 360 KM/H</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flight-log-card">
+                    <div class="flight-log-img-wrap">
+                        <img src="assets/oficina-2.jpg" alt="Students in CEA workshop" class="zoomable-img">
+                        <span class="flight-log-meta-tag">[DEMEC / UFMG WORKSHOP]</span>
+                    </div>
+                    <div class="flight-log-body">
+                        <div>
+                            <h4 data-en="Rib Alignment & Spar Assembly" data-pt="Ajuste Estrutural de Nervuras">Rib Alignment & Spar Assembly</h4>
+                            <p data-en="Millimetric precision craftsmanship performed by engineering undergrads under Akaflieg methodology." data-pt="Trabalho manual de precisão milimétrica executado por estudantes de graduação.">Millimetric precision craftsmanship performed by engineering undergrads under Akaflieg methodology.</p>
+                        </div>
+                        <div class="flight-log-footer">
+                            <span>METHOD: AKAFLIEG</span>
+                            <span>FOCUS: STRUCTURES</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flight-log-card">
+                    <div class="flight-log-img-wrap">
+                        <img src="assets/minuano-pista.jpg" alt="Minuano glider in hangar" class="zoomable-img">
+                        <span class="flight-log-meta-tag">[GLIDING CLUB · HANGAR]</span>
+                    </div>
+                    <div class="flight-log-body">
+                        <div>
+                            <h4 data-en="CB-2 Minuano Sailplane" data-pt="CB-2 Minuano em Hangar">CB-2 Minuano Sailplane</h4>
+                            <p data-en="High-efficiency laminar glider with 15m wingspan and 38:1 glide ratio, 1978 Brazilian National Champion." data-pt="Planador de alta eficiência laminar com envergadura de 15 metros e razão de planeio 38:1, campeão nacional de 1978.">High-efficiency laminar glider with 15m wingspan and 38:1 glide ratio, 1978 Brazilian National Champion.</p>
+                        </div>
+                        <div class="flight-log-footer">
+                            <span>GLIDE: 38:1</span>
+                            <span>DESIGN: CLÁUDIO BARROS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox-modal">
+        <div class="lightbox-content-box">
+            <button class="lightbox-close-btn" id="lightbox-close">&times;</button>
+            <img src="" id="lightbox-img" style="width: 100%; max-height: 75vh; object-fit: contain; display: block; background: #000;" alt="High-resolution inspection">
+            <div style="padding: 1.2rem 1.5rem; background: var(--bg-panel-solid); border-top: 1px solid var(--border-light);">
+                <p id="lightbox-caption" style="font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent-cyan); margin: 0;"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact & Location -->
+    <section class="contact-section" id="contato">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" data-en="Get in Touch" data-pt="Fale Conosco">Get in Touch</span>
+                <h2 data-en="Contact & Location" data-pt="Contato e Localização">Contact & Location</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-grid animate-on-scroll">
+                <!-- Info & Map -->
+                <div class="contact-info">
+                    <h3 data-en="Where to Find Us" data-pt="Onde nos Encontrar">Where to Find Us</h3>
+                    <p data-en="The Center for Aeronautical Studies is located at the DEMEC building, UFMG Pampulha Campus." data-pt="O Centro de Estudos Aeronáuticos está localizado nas instalações da Escola de Engenharia, no Campus Pampulha da UFMG.">The Center for Aeronautical Studies is located at the DEMEC building, UFMG Pampulha Campus.</p>
+                    
+                    <ul class="contact-details-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong data-en="Address:" data-pt="Endereço:">Address:</strong><br>
+                                Av. Antônio Carlos, 6627 - DEMEC Building<br>
+                                Pampulha Campus, Belo Horizonte - MG, Brazil<br>
+                                CEP 31270-901
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong data-en="Phone:" data-pt="Telefone:">Phone:</strong><br>
+                                +55 (31) 3409-5075
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>E-mail:</strong><br>
+                                contato@cea.demec.ufmg.br
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <!-- Stylized Vector Map Mockup -->
+                    <div class="map-mockup">
+                        <div class="map-grid"></div>
+                        <div class="map-pin">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <span class="pin-tooltip">CEA - DEMEC Block 3</span>
+                        </div>
+                        <div class="map-label">UFMG - Pampulha Campus</div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3 data-en="Send Us a Message" data-pt="Envie uma Mensagem">Send Us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-en="Full Name" data-pt="Nome Completo">Full Name</label>
+                            <input type="text" id="name" required placeholder="Your full name" data-en="Your full name" data-pt="Digite seu nome">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" required placeholder="name@domain.com" data-en="name@domain.com" data-pt="exemplo@dominio.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" data-en="Subject" data-pt="Assunto">Subject</label>
+                                <select id="subject" required>
+                                    <option value="" disabled selected data-en="Select a subject" data-pt="Selecione um assunto">Select a subject</option>
+                                    <option value="pesquisa" data-en="Research & Industrial Partnership" data-pt="Pesquisa & Parceria">Research & Industrial Partnership</option>
+                                    <option value="estudo" data-en="Student Admissions" data-pt="Ingresso de Alunos">Student Admissions</option>
+                                    <option value="visita" data-en="Laboratory Visit" data-pt="Visita ao Laboratório">Laboratory Visit</option>
+                                    <option value="outro" data-en="Other Enquiries" data-pt="Outros">Other Enquiries</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-en="Message" data-pt="Mensagem">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Write your message here..." data-en="Write your message here..." data-pt="Escreva sua mensagem aqui..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span data-en="Send Message" data-pt="Enviar Mensagem">Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <!-- Success popup -->
+                    <div class="form-success-message" id="form-success">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h4 data-en="Message Sent!" data-pt="Mensagem Enviada!">Message Sent!</h4>
+                        <p data-en="Thank you for reaching out. We will get back to you soon." data-pt="Obrigado pelo contato. Retornaremos assim que possível.">Thank you for reaching out. We will get back to you soon.</p>
+                        <button class="btn btn-secondary btn-sm" id="btn-reset-form" data-en="Send another" data-pt="Enviar outra">Send another</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="assets/logo.png" alt="CEA UFMG Logo" class="footer-logo-img">
+                        <div class="footer-brand-text">
+                            CEA <span>UFMG</span>
+                        </div>
+                    </a>
+                    <p class="footer-tagline" data-en="Center for Aeronautical Studies at UFMG School of Engineering. Designing high-performance experimental aircraft and setting FAI world records since 1963." data-pt="Centro de Estudos Aeronáuticos da Escola de Engenharia da UFMG. Projetando aeronaves experimentais de alta performance e quebrando recordes mundiais desde 1963.">Center for Aeronautical Studies at UFMG School of Engineering. Designing high-performance experimental aircraft and setting FAI world records since 1963.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-en="Navigation" data-pt="Navegação">Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html" data-en="Home" data-pt="Página Inicial">Home</a></li>
+                        <li><a href="projetos.html" data-en="Aircraft & Projects" data-pt="Projetos & Protótipos">Aircraft & Projects</a></li>
+                        <li><a href="solucoes.html" data-en="Solutions & Services" data-pt="Soluções Tecnológicas">Solutions & Services</a></li>
+                        <li><a href="homenagem.html" data-en="Prof. Cláudio Barros Tribute" data-pt="Homenagem Prof. Cláudio Barros">Prof. Cláudio Barros Tribute</a></li>
+                        <li><a href="artigos.html" data-en="Scientific Publications" data-pt="Artigos Científicos">Scientific Publications</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-social-info">
+                    <h4 data-en="Social Media" data-pt="Redes Sociais">Social Media</h4>
+                    <p data-en="Stay up to date with new world records and CEA research projects:" data-pt="Fique por dentro dos novos recordes e projetos de pesquisa do CEA:">Stay up to date with new world records and CEA research projects:</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/cea-ufmg/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cea_ufmg/" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p data-en="&copy; 2026 Center for Aeronautical Studies (CEA) - UFMG. All rights reserved." data-pt="&copy; 2026 Centro de Estudos Aeronáuticos (CEA) - UFMG. Todos os direitos reservados.">&copy; 2026 Center for Aeronautical Studies (CEA) - UFMG. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
