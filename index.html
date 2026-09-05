@@ -529,31 +529,39 @@
                 <div class="contact-form-container">
                     <h3 data-en="Send Us a Message" data-pt="Envie uma Mensagem">Send Us a Message</h3>
                     <form id="contact-form">
+                        <!-- FormSubmit configuration (hidden) -->
+                        <input type="hidden" name="_cc" value="lhmachado@ufmg.br">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <!-- Anti-spam Honeypot field (hidden) -->
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
                         <div class="form-group">
                             <label for="name" data-en="Full Name" data-pt="Nome Completo">Full Name</label>
-                            <input type="text" id="name" required placeholder="Your full name" data-en="Your full name" data-pt="Digite seu nome">
+                            <input type="text" id="name" name="name" required placeholder="Your full name" data-en="Your full name" data-pt="Digite seu nome">
                         </div>
                         
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="email">E-mail</label>
-                                <input type="email" id="email" required placeholder="name@domain.com" data-en="name@domain.com" data-pt="exemplo@dominio.com">
+                                <input type="email" id="email" name="email" required placeholder="name@domain.com" data-en="name@domain.com" data-pt="exemplo@dominio.com">
                             </div>
                             <div class="form-group">
                                 <label for="subject" data-en="Subject" data-pt="Assunto">Subject</label>
-                                <select id="subject" required>
+                                <select id="subject" name="subject" required>
                                     <option value="" disabled selected data-en="Select a subject" data-pt="Selecione um assunto">Select a subject</option>
-                                    <option value="pesquisa" data-en="Research & Industrial Partnership" data-pt="Pesquisa & Parceria">Research & Industrial Partnership</option>
-                                    <option value="estudo" data-en="Student Admissions" data-pt="Ingresso de Alunos">Student Admissions</option>
-                                    <option value="visita" data-en="Laboratory Visit" data-pt="Visita ao Laboratório">Laboratory Visit</option>
-                                    <option value="outro" data-en="Other Enquiries" data-pt="Outros">Other Enquiries</option>
+                                    <option value="Research & Industrial Partnership" data-en="Research & Industrial Partnership" data-pt="Pesquisa & Parceria">Research & Industrial Partnership</option>
+                                    <option value="Student Admissions" data-en="Student Admissions" data-pt="Ingresso de Alunos">Student Admissions</option>
+                                    <option value="Laboratory Visit" data-en="Laboratory Visit" data-pt="Visita ao Laboratório">Laboratory Visit</option>
+                                    <option value="Other Enquiries" data-en="Other Enquiries" data-pt="Outros">Other Enquiries</option>
                                 </select>
                             </div>
                         </div>
                         
                         <div class="form-group">
                             <label for="message" data-en="Message" data-pt="Mensagem">Message</label>
-                            <textarea id="message" rows="5" required placeholder="Write your message here..." data-en="Write your message here..." data-pt="Escreva sua mensagem aqui..."></textarea>
+                            <textarea id="message" rows="5" name="message" required placeholder="Write your message here..." data-en="Write your message here..." data-pt="Escreva sua mensagem aqui..."></textarea>
                         </div>
                         
                         <button type="submit" class="btn btn-primary btn-submit">

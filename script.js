@@ -259,27 +259,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* ==========================================================================
-       CONTACT FORM SUBMISSION HANDLER
+       CONTACT FORM SUBMISSION HANDLER (FormSubmit AJAX + Honeypot Anti-Spam)
        ========================================================================== */
     const contactForm = document.getElementById('contact-form');
     const successPane = document.getElementById('form-success');
     const resetFormBtn = document.getElementById('btn-reset-form');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
+            // Anti-Spam Honeypot Verification
+            const honeyField = contactForm.querySelector('input[name="_honey"]');
+            if (honeyField && honeyField.value.trim() !== '') {
+                // Silently reject spam bots that populate hidden fields
+                return;
+            }
+
             const submitBtn = contactForm.querySelector('.btn-submit');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = `<span>Processando...</span> <i class="fa-solid fa-spinner fa-spin"></i>`;
+            const originalBtnHTML = submitBtn.innerHTML;
+            const currentLang = localStorage.getItem('cea_lang') || 'en';
+            const sendingText = currentLang === 'pt' ? 'Enviando...' : 'Sending...';
+
+            submitBtn.innerHTML = `<span>${sendingText}</span> <i class="fa-solid fa-spinner fa-spin"></i>`;
             submitBtn.disabled = true;
 
-            setTimeout(() => {
-                submitBtn.innerHTML = originalText;
+            try {
+                const formData = new FormData(contactForm);
+                const subjectSelect = contactForm.querySelector('#subject');
+                const selectedSubject = subjectSelect && subjectSelect.value ? subjectSelect.value : 'General Enquiry';
+                formData.set('_subject', `[CEA-UFMG Website] ${selectedSubject}`);
+
+                const response = await fetch('https://formsubmit.co/ajax/laguardia@demec.ufmg.br', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (response.ok && (result.success === "true" || result.success === true || result.message)) {
+                    contactForm.reset();
+                    if (successPane) successPane.classList.add('active');
+                } else {
+                    throw new Error(result.message || 'Form submission failed');
+                }
+            } catch (err) {
+                console.error('Contact form submission error:', err);
+                const errorMsg = currentLang === 'pt'
+                    ? 'Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente ou entre em contato diretamente pelo e-mail do laboratório.'
+                    : 'An error occurred while sending your message. Please try again or contact the laboratory directly via email.';
+                alert(errorMsg);
+            } finally {
+                submitBtn.innerHTML = originalBtnHTML;
                 submitBtn.disabled = false;
-                
-                if (successPane) successPane.classList.add('active');
-            }, 1200);
+            }
         });
     }
 
