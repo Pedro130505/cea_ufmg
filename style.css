@@ -362,7 +362,7 @@ img {
     justify-content: center;
     background:
         radial-gradient(circle at 78% 28%, rgba(0, 80, 220, 0.2) 0%, transparent 58%),
-        url('assets/hero-bg.png') center 32% / cover no-repeat;
+        url('assets/hero-bg.webp') center 32% / cover no-repeat;
     background-attachment: fixed;
 }
 
@@ -2192,7 +2192,7 @@ textarea {
     align-items: center;
     background:
         linear-gradient(155deg, rgba(38, 71, 102, 0.84) 0%, rgba(20, 42, 68, 0.9) 55%, var(--bg-dark) 100%),
-        url('assets/hero-bg.png') center 38% / cover no-repeat;
+        url('assets/hero-bg.webp') center 38% / cover no-repeat;
     background-attachment: fixed;
     border-bottom: 1px solid var(--border-light);
     overflow: hidden;
@@ -2211,37 +2211,37 @@ textarea {
 .subpage-hero.hero-projetos {
     background:
         linear-gradient(155deg, rgba(38, 71, 102, 0.72) 0%, rgba(12, 28, 50, 0.88) 55%, var(--bg-dark) 100%),
-        url('assets/planadores-voo.jpg') center 40% / cover no-repeat;
+        url('assets/planadores-voo.webp') center 40% / cover no-repeat;
     background-attachment: fixed;
 }
 .subpage-hero.hero-homenagem {
     background:
         linear-gradient(155deg, rgba(28, 55, 82, 0.92) 0%, rgba(12, 28, 48, 0.95) 55%, var(--bg-dark) 100%),
-        url('assets/hero-bg.png') center 38% / cover no-repeat;
+        url('assets/hero-bg.webp') center 38% / cover no-repeat;
     background-attachment: fixed;
 }
 .subpage-hero.hero-equipe {
     background:
         linear-gradient(155deg, rgba(38, 71, 102, 0.85) 0%, rgba(22, 48, 80, 0.92) 55%, var(--bg-dark) 100%),
-        url('assets/hero-bg.png') center 30% / cover no-repeat;
+        url('assets/hero-bg.webp') center 30% / cover no-repeat;
     background-attachment: fixed;
 }
 .subpage-hero.hero-solucoes {
     background:
         linear-gradient(155deg, rgba(25, 68, 105, 0.86) 0%, rgba(14, 44, 78, 0.92) 55%, var(--bg-dark) 100%),
-        url('assets/hero-bg.png') center 42% / cover no-repeat;
+        url('assets/hero-bg.webp') center 42% / cover no-repeat;
     background-attachment: fixed;
 }
 .subpage-hero.hero-artigos {
     background:
         linear-gradient(155deg, rgba(32, 60, 98, 0.86) 0%, rgba(16, 38, 72, 0.92) 55%, var(--bg-dark) 100%),
-        url('assets/hero-bg.png') center 38% / cover no-repeat;
+        url('assets/hero-bg.webp') center 38% / cover no-repeat;
     background-attachment: fixed;
 }
 .subpage-hero.hero-oportunidades {
     background:
         linear-gradient(155deg, rgba(30, 72, 92, 0.84) 0%, rgba(15, 48, 72, 0.92) 55%, var(--bg-dark) 100%),
-        url('assets/hero-bg.png') center 35% / cover no-repeat;
+        url('assets/hero-bg.webp') center 35% / cover no-repeat;
     background-attachment: fixed;
 }
 

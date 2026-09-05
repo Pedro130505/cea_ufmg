@@ -1,5 +1,10 @@
 .agents/
+.temp_repos/
+.gemini/
+node_modules/
+.env
 .vscode/
 .idea/
 *.pyc
 __pycache__/
+
