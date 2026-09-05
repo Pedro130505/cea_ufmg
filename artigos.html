@@ -6,6 +6,36 @@
     <meta name="description" content="Academic papers and technical reports published by researchers and students at the Center for Aeronautical Studies (CEA), UFMG School of Engineering.">
     <title>Publications & Technical Papers | CEA - UFMG</title>
     
+    <!-- SEO & Canonical -->
+    <link rel="canonical" href="https://cea.demec.ufmg.br/artigos.html">
+    <link rel="alternate" hreflang="en" href="https://cea.demec.ufmg.br/artigos.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://cea.demec.ufmg.br/artigos.html">
+    <link rel="alternate" hreflang="x-default" href="https://cea.demec.ufmg.br/artigos.html">
+    
+    <!-- Favicon & Mobile Theme -->
+    <link rel="icon" type="image/webp" href="assets/logo.webp">
+    <link rel="apple-touch-icon" href="assets/logo.webp">
+    <meta name="theme-color" content="#0a121e">
+    
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cea.demec.ufmg.br/artigos.html">
+    <meta property="og:title" content="Publications & Technical Papers | CEA - UFMG">
+    <meta property="og:description" content="Explore peer-reviewed scientific publications, flight test data, and technical research papers produced by CEA-UFMG researchers.">
+    <meta property="og:image" content="https://cea.demec.ufmg.br/assets/foto1-artigos.webp">
+    <meta property="og:image:secure_url" content="https://cea.demec.ufmg.br/assets/foto1-artigos.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="CEA UFMG">
+    <link rel="image_src" href="https://cea.demec.ufmg.br/assets/foto1-artigos.webp">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Publications & Technical Papers | CEA - UFMG">
+    <meta name="twitter:description" content="Scientific research output and aeronautical engineering papers from UFMG.">
+    <meta name="twitter:image" content="https://cea.demec.ufmg.br/assets/foto1-artigos.webp">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +46,57 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "CEA UFMG Publications & Technical Papers",
+      "description": "Academic research articles, conference proceedings, and flight validation reports from the Center for Aeronautical Studies (CEA - UFMG).",
+      "url": "https://cea.demec.ufmg.br/artigos.html",
+      "publisher": {
+        "@type": "ResearchOrganization",
+        "name": "Center for Aeronautical Studies (CEA - UFMG)",
+        "url": "https://cea.demec.ufmg.br"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ScholarlyArticle",
+            "name": "Design and Flight Validation of the CEA-311 Anequim Record-Breaking Aircraft",
+            "author": {
+              "@type": "Organization",
+              "name": "CEA UFMG Research Team"
+            },
+            "publisher": "UFMG School of Engineering",
+            "about": "Experimental Aircraft Aerodynamics and Carbon Composite Design"
+          }
+        ]
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cea.demec.ufmg.br/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Publications & Technical Papers",
+          "item": "https://cea.demec.ufmg.br/artigos.html"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -50,6 +131,7 @@
         </div>
     </header>
 
+    <main>
     <!-- Subpage Hero -->
     <section class="subpage-hero hero-artigos" style="background-image: url('assets/foto1-artigos.webp'); background-size: cover; background-position: center;">
         <div class="hero-overlay"></div>
@@ -168,6 +250,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="main-footer">

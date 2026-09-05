@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://cea.demec.ufmg.br/sitemap.xml
+
+# LLM / AI Search Indexing Guidance
+# llms.txt: https://cea.demec.ufmg.br/llms.txt
+# llms-full.txt: https://cea.demec.ufmg.br/llms-full.txt

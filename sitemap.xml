@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://cea.demec.ufmg.br/index.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cea.demec.ufmg.br/index.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cea.demec.ufmg.br/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cea.demec.ufmg.br/index.html" />
+  </url>
+  <url>
+    <loc>https://cea.demec.ufmg.br/projetos.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cea.demec.ufmg.br/projetos.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cea.demec.ufmg.br/projetos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cea.demec.ufmg.br/projetos.html" />
+  </url>
+  <url>
+    <loc>https://cea.demec.ufmg.br/solucoes.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cea.demec.ufmg.br/solucoes.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cea.demec.ufmg.br/solucoes.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cea.demec.ufmg.br/solucoes.html" />
+  </url>
+  <url>
+    <loc>https://cea.demec.ufmg.br/homenagem.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cea.demec.ufmg.br/homenagem.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cea.demec.ufmg.br/homenagem.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cea.demec.ufmg.br/homenagem.html" />
+  </url>
+  <url>
+    <loc>https://cea.demec.ufmg.br/artigos.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cea.demec.ufmg.br/artigos.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cea.demec.ufmg.br/artigos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cea.demec.ufmg.br/artigos.html" />
+  </url>
+</urlset>

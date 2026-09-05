@@ -6,6 +6,36 @@
     <meta name="description" content="Technological solutions and technical R&D services at the Center for Aeronautical Studies (CEA - UFMG): CFD aerodynamic consulting, FEA structural calculation, composite manufacturing, and flight testing.">
     <title>Technological Solutions & Services | CEA - UFMG</title>
     
+    <!-- SEO & Canonical -->
+    <link rel="canonical" href="https://cea.demec.ufmg.br/solucoes.html">
+    <link rel="alternate" hreflang="en" href="https://cea.demec.ufmg.br/solucoes.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://cea.demec.ufmg.br/solucoes.html">
+    <link rel="alternate" hreflang="x-default" href="https://cea.demec.ufmg.br/solucoes.html">
+    
+    <!-- Favicon & Mobile Theme -->
+    <link rel="icon" type="image/webp" href="assets/logo.webp">
+    <link rel="apple-touch-icon" href="assets/logo.webp">
+    <meta name="theme-color" content="#0a121e">
+    
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cea.demec.ufmg.br/solucoes.html">
+    <meta property="og:title" content="Technological Solutions & R&D Services | CEA - UFMG">
+    <meta property="og:description" content="Aeronautical R&D consulting services: CFD aerodynamic design, FEA composite structural analysis, flight testing telemetry, and custom UAV controller development.">
+    <meta property="og:image" content="https://cea.demec.ufmg.br/assets/foto1-projetos.webp">
+    <meta property="og:image:secure_url" content="https://cea.demec.ufmg.br/assets/foto1-projetos.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="CEA UFMG">
+    <link rel="image_src" href="https://cea.demec.ufmg.br/assets/foto1-projetos.webp">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Technological Solutions & R&D Services | CEA - UFMG">
+    <meta name="twitter:description" content="Aeronautical R&D, CFD aerodynamics, composite structural analysis, and flight testing at UFMG.">
+    <meta name="twitter:image" content="https://cea.demec.ufmg.br/assets/foto1-projetos.webp">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +46,80 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "CEA UFMG Aeronautical Engineering & R&D Solutions",
+      "serviceType": "Aeronautical Engineering Consulting & Experimental R&D",
+      "provider": {
+        "@type": "ResearchOrganization",
+        "name": "Center for Aeronautical Studies (CEA - UFMG)",
+        "url": "https://cea.demec.ufmg.br"
+      },
+      "areaServed": "Global",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Technological Capabilities",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "CFD & Aerodynamic Optimization",
+              "description": "Laminar transition modeling, drag polar calculation, RANS CFD simulation, and subsonic wind tunnel validation."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Composite Structural FEA & Manufacturing",
+              "description": "FEA calculation for high-G load capacity, carbon-fiber vacuum infusion over Nomex aramid honeycomb sandwich cores, and flutter prevention."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Flight Testing & Dynamic Telemetry",
+              "description": "Instrumented flight test campaigns with embedded CAN-bus telemetry systems and dynamic air data acquisition."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Autonomous Aerial Systems (UAS/UAV)",
+              "description": "Custom flight controllers, autopilot integration, and unmanned aerial robotics for civil and defense applications."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cea.demec.ufmg.br/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Technological Solutions",
+          "item": "https://cea.demec.ufmg.br/solucoes.html"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -50,6 +154,7 @@
         </div>
     </header>
 
+    <main>
     <!-- Subpage Hero -->
     <section class="subpage-hero hero-solucoes" style="background-image: url('assets/foto1-projetos.webp'); background-size: cover; background-position: center;">
         <div class="hero-overlay"></div>
@@ -239,6 +344,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="main-footer">

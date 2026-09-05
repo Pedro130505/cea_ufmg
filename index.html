@@ -6,6 +6,38 @@
     <meta name="description" content="Center for Aeronautical Studies (CEA) at UFMG School of Engineering. Designing world-record holding experimental aircraft since 1963.">
     <title>CEA - Center for Aeronautical Studies | UFMG</title>
     
+    <!-- SEO & Canonical -->
+    <link rel="canonical" href="https://cea.demec.ufmg.br/index.html">
+    <link rel="alternate" hreflang="en" href="https://cea.demec.ufmg.br/index.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://cea.demec.ufmg.br/index.html">
+    <link rel="alternate" hreflang="x-default" href="https://cea.demec.ufmg.br/index.html">
+    
+    <!-- Favicon & Mobile Theme -->
+    <link rel="icon" type="image/webp" href="assets/logo.webp">
+    <link rel="apple-touch-icon" href="assets/logo.webp">
+    <meta name="theme-color" content="#0a121e">
+    
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cea.demec.ufmg.br/index.html">
+    <meta property="og:title" content="CEA - Center for Aeronautical Studies | UFMG">
+    <meta property="og:description" content="State-of-the-art aeronautical engineering laboratory at UFMG. Holder of 9 FAI world flight speed and climb records.">
+    <meta property="og:image" content="https://cea.demec.ufmg.br/assets/foto1-home.webp">
+    <meta property="og:image:secure_url" content="https://cea.demec.ufmg.br/assets/foto1-home.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="CEA UFMG">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <link rel="image_src" href="https://cea.demec.ufmg.br/assets/foto1-home.webp">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CEA - Center for Aeronautical Studies | UFMG">
+    <meta name="twitter:description" content="Designing high-performance experimental aircraft and setting FAI world records at UFMG since 1963.">
+    <meta name="twitter:image" content="https://cea.demec.ufmg.br/assets/foto1-home.webp">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +48,65 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["EducationalOrganization", "ResearchOrganization"],
+          "@id": "https://cea.demec.ufmg.br/#organization",
+          "name": "Center for Aeronautical Studies (CEA - UFMG)",
+          "alternateName": "Centro de Estudos Aeronáuticos",
+          "url": "https://cea.demec.ufmg.br",
+          "logo": "https://cea.demec.ufmg.br/assets/logo.webp",
+          "image": "https://cea.demec.ufmg.br/assets/foto1-home.webp",
+          "description": "State-of-the-art research laboratory within the Department of Mechanical Engineering at UFMG School of Engineering, pioneering experimental aircraft development and setting FAI world records.",
+          "foundingDate": "1963",
+          "founder": {
+            "@type": "Person",
+            "name": "Prof. Cláudio Pinto de Barros"
+          },
+          "parentOrganization": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidade Federal de Minas Gerais",
+            "alternateName": "UFMG",
+            "url": "https://ufmg.br"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Antônio Carlos, 6627 - Bloco DEMEC",
+            "addressLocality": "Belo Horizonte",
+            "addressRegion": "MG",
+            "postalCode": "31270-901",
+            "addressCountry": "BR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-19.866667",
+            "longitude": "-43.950000"
+          },
+          "telephone": "+55-31-3409-5075",
+          "email": "contato@cea.demec.ufmg.br",
+          "sameAs": [
+            "https://www.linkedin.com/company/cea-ufmg/",
+            "https://www.instagram.com/cea_ufmg/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://cea.demec.ufmg.br/#website",
+          "url": "https://cea.demec.ufmg.br",
+          "name": "CEA - Center for Aeronautical Studies",
+          "publisher": {
+            "@id": "https://cea.demec.ufmg.br/#organization"
+          },
+          "inLanguage": ["en", "pt-BR"]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -50,6 +141,7 @@
         </div>
     </header>
 
+    <main>
     <!-- Hero Section -->
     <section class="hero-section" id="home">
         <div class="hero-overlay"></div>
@@ -481,6 +573,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="main-footer">

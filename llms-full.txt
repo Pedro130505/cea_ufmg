@@ -1,0 +1,56 @@
+# Complete Knowledge Base - Center for Aeronautical Studies (CEA - UFMG)
+
+## Institution Identity
+- **Name**: Centro de Estudos Aeronáuticos (CEA) / Center for Aeronautical Studies
+- **Affiliation**: Departamento de Engenharia Mecânica (DEMEC), Escola de Engenharia da Universidade Federal de Minas Gerais (UFMG)
+- **Location**: Av. Antônio Carlos, 6627, Bloco 3 - DEMEC, Campus Pampulha, Belo Horizonte - MG, CEP 31270-901, Brazil
+- **Founded**: 1963 by Prof. Cláudio Pinto de Barros
+- **Methodology**: Akaflieg (Akademische Fliegergruppe - academic soaring group model, learning by doing)
+
+## Aircraft Portfolio & World Records
+
+### 1. CEA-311 Anequim (2015)
+- **Type**: Single-seat custom carbon-fiber racing aircraft.
+- **Engine**: Lycoming IO-360 (modified 4-cylinder piston engine).
+- **Construction**: 100% carbon-fiber sandwich with Nomex aramid honeycomb core.
+- **World Records (FAI Class C-1.b / Group 1)**:
+  1. 3 km straight course at low altitude: 521.08 km/h
+  2. 15 km straight course: 511.19 km/h
+  3. 100 km closed circuit: 490.14 km/h
+  4. 500 km closed circuit: 421.51 km/h
+  5. Time to climb to 3,000 meters: 2 minutes 26 seconds
+
+### 2. CEA-308 (2001)
+- **Type**: Lightweight single-seat speed airplane.
+- **Engine**: Jabiru 2200 (80 hp).
+- **World Records (FAI Class C-1.a/0 - under 300 kg takeoff weight)**:
+  1. 3 km straight speed: 360.13 km/h
+  2. 15 km straight speed: 329.1 km/h
+  3. 100 km closed circuit speed: 326.8 km/h
+  4. Time to climb to 3,000 meters: 8 minutes 15 seconds
+
+### 3. CB-2 Minuano (1974 / CEA-102)
+- **Type**: High-performance single-seat sailplane / glider.
+- **Glide Ratio**: 38:1
+- **Wingspan**: 15.0 m
+- **Achievement**: 1978 Brazilian National Soaring Champion.
+
+### 4. CB-1 Gaivota (1964 / CEA-101)
+- **Type**: Single-seat basic training glider.
+- **Structure**: Freijó wood, aeronautical plywood, cotton fabric cover.
+- **Glide Ratio**: 20:1
+- **Historical Significance**: First complete prototype designed and built at UFMG.
+
+### 5. CEA-314 Tandem (In Progress)
+- **Type**: Full carbon-fiber tandem aerobatic trainer synthesizing CEA heritage and Kovács design principles.
+
+## Research & Technological Services
+1. **Computational Aerodynamics (CFD)**: Laminar transition modeling, drag polar calculation, multi-element airfoils using RANS CFD and subsonic wind tunnel validation.
+2. **Structural FEA & Composites**: Finite Element Analysis for G-load capacity, aeroelasticity, flutter prevention, vacuum infusion of carbon-fiber and Nomex sandwich structures.
+3. **Flight Testing & Telemetry**: Dynamic flight testing with CAN-bus instrumentation, high-rate inertial sensors, pitot-static calibration, and real-time telemetry.
+4. **Autonomous Systems (UAS)**: Research on custom flight controllers, autopilot integration, and unmanned aerial robotics.
+
+## Contact Information
+- **Email**: contato@cea.demec.ufmg.br
+- **Phone**: +55 (31) 3409-5075
+- **Website**: https://cea.demec.ufmg.br
