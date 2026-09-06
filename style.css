@@ -48,6 +48,11 @@ html {
     background-color: var(--bg-dark);
     color: var(--text-white);
     font-family: var(--font-body);
+    -webkit-text-size-adjust: 100%;
+}
+
+a, button, input, select, textarea, .btn, .nav-link {
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
