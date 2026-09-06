@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const selectedSubject = subjectSelect && subjectSelect.value ? subjectSelect.value : 'General Enquiry';
                 formData.set('_subject', `[CEA-UFMG Website] ${selectedSubject}`);
 
-                const response = await fetch('https://formsubmit.co/ajax/laguardia@demec.ufmg.br', {
+                const response = await fetch('https://formsubmit.co/ajax/Lhmachado.ufmg@gmail.com', {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json'
