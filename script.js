@@ -523,37 +523,96 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* ==========================================================================
-       TECHNICAL LIGHTBOX MODAL
+       HISTORICAL PHOTOGRAPHIC ARCHIVE FILTERING
        ========================================================================== */
-    const lightboxModal = document.getElementById('lightbox-modal');
+    const acervoFilterBtns = document.querySelectorAll('.acervo-filter-btn');
+    const acervoCards = document.querySelectorAll('.acervo-card');
+
+    if (acervoFilterBtns.length > 0 && acervoCards.length > 0) {
+        acervoFilterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                acervoFilterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterVal = btn.getAttribute('data-filter');
+                acervoCards.forEach(card => {
+                    const cardCat = card.getAttribute('data-category');
+                    if (filterVal === 'all' || cardCat === filterVal) {
+                        card.classList.remove('is-hidden');
+                    } else {
+                        card.classList.add('is-hidden');
+                    }
+                });
+            });
+        });
+    }
+
+    /* ==========================================================================
+       TECHNICAL LIGHTBOX MODAL (Dynamic & Zoomable)
+       ========================================================================== */
+    let lightboxModal = document.getElementById('lightbox-modal');
+    if (!lightboxModal) {
+        lightboxModal = document.createElement('div');
+        lightboxModal.id = 'lightbox-modal';
+        lightboxModal.className = 'lightbox-modal';
+        lightboxModal.setAttribute('role', 'dialog');
+        lightboxModal.setAttribute('aria-hidden', 'true');
+        lightboxModal.innerHTML = `
+            <div class="lightbox-content-box">
+                <button id="lightbox-close" class="lightbox-close-btn" aria-label="Close lightbox">&times;</button>
+                <img id="lightbox-img" src="" alt="" style="width: 100%; max-height: 80vh; object-fit: contain; display: block; background: #000;">
+                <div id="lightbox-caption" style="padding: 1rem 1.5rem; background: var(--bg-panel); color: var(--text-muted); font-size: 0.88rem; border-top: 1px solid var(--border-light); font-family: var(--font-mono); line-height: 1.5;"></div>
+            </div>
+        `;
+        document.body.appendChild(lightboxModal);
+    }
+
     const lightboxImg = document.getElementById('lightbox-img');
     const lightboxCaption = document.getElementById('lightbox-caption');
     const lightboxClose = document.getElementById('lightbox-close');
-    const zoomableImages = document.querySelectorAll('.zoomable-img');
 
-    if (lightboxModal && lightboxImg) {
-        zoomableImages.forEach(imgEl => {
-            imgEl.style.cursor = 'zoom-in';
-            imgEl.addEventListener('click', () => {
-                const fullSrc = imgEl.getAttribute('data-full') || imgEl.src;
-                const altText = imgEl.getAttribute('alt') || 'Registro de Engenharia CEA-UFMG';
-                lightboxImg.src = fullSrc;
-                if (lightboxCaption) lightboxCaption.textContent = altText;
-                lightboxModal.classList.add('active');
-            });
-        });
-
-        if (lightboxClose) {
-            lightboxClose.addEventListener('click', () => {
-                lightboxModal.classList.remove('active');
-            });
+    function openLightbox(src, captionText) {
+        if (!lightboxModal || !lightboxImg) return;
+        lightboxImg.src = src;
+        if (lightboxCaption) {
+            lightboxCaption.textContent = captionText || 'Registro de Engenharia CEA-UFMG';
         }
+        lightboxModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
 
+    function closeLightbox() {
+        if (!lightboxModal) return;
+        lightboxModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.zoomable-img, .acervo-zoomable').forEach(imgEl => {
+        imgEl.style.cursor = 'zoom-in';
+        imgEl.addEventListener('click', () => {
+            const fullSrc = imgEl.getAttribute('data-full') || imgEl.src;
+            const caption = imgEl.getAttribute('data-caption') || imgEl.getAttribute('alt') || '';
+            openLightbox(fullSrc, caption);
+        });
+    });
+
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', closeLightbox);
+    }
+
+    if (lightboxModal) {
         lightboxModal.addEventListener('click', (e) => {
             if (e.target === lightboxModal) {
-                lightboxModal.classList.remove('active');
+                closeLightbox();
             }
         });
     }
 
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightboxModal && lightboxModal.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+
 });
+

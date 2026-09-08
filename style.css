@@ -5373,3 +5373,199 @@ textarea {
     margin: 0;
     flex-grow: 1;
 }
+
+/* ==========================================================================
+   SUBPAGE QUICK NAVIGATION PILLS
+   ========================================================================== */
+.subnav-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1.15rem;
+    border-radius: 30px;
+    background: rgba(14, 165, 233, 0.08);
+    border: 1px solid rgba(14, 165, 233, 0.25);
+    color: var(--text-light);
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.subnav-pill:hover {
+    background: rgba(14, 165, 233, 0.2);
+    border-color: var(--accent-cyan);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.25);
+}
+
+.subnav-pill i {
+    color: var(--accent-cyan);
+    font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   HISTORICAL PHOTOGRAPHIC ARCHIVE (ACERVO FOTOGRÁFICO)
+   ========================================================================== */
+.acervo-fotografico-section {
+    padding: 5.5rem 0;
+    border-top: 1px solid var(--border-light);
+    background: radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.03) 0%, transparent 70%);
+}
+
+.acervo-filter-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    justify-content: center;
+    margin: 2.5rem 0 3rem 0;
+}
+
+.acervo-filter-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.6rem 1.25rem;
+    border-radius: 30px;
+    border: 1px solid var(--border-light);
+    background: var(--bg-panel);
+    color: var(--text-muted);
+    font-size: 0.84rem;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.acervo-filter-btn:hover {
+    border-color: var(--accent-cyan);
+    color: #fff;
+    background: rgba(14, 165, 233, 0.12);
+}
+
+.acervo-filter-btn.active {
+    background: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+    color: #070d18;
+    font-weight: 700;
+    box-shadow: 0 0 16px rgba(14, 165, 233, 0.4);
+}
+
+.acervo-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.75rem;
+    margin-top: 1rem;
+}
+
+.acervo-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.acervo-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45), 0 0 15px rgba(14, 165, 233, 0.15);
+}
+
+.acervo-card-img-wrap {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+    background: #000;
+    cursor: zoom-in;
+}
+
+.acervo-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s ease;
+}
+
+.acervo-card:hover .acervo-card-img-wrap img {
+    transform: scale(1.05);
+}
+
+.acervo-card-badge {
+    position: absolute;
+    top: 0.85rem;
+    left: 0.85rem;
+    background: rgba(10, 18, 30, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border-light);
+    padding: 0.3rem 0.65rem;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--accent-cyan);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    z-index: 2;
+}
+
+.acervo-card-zoom-indicator {
+    position: absolute;
+    bottom: 0.85rem;
+    right: 0.85rem;
+    background: rgba(10, 18, 30, 0.75);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.85rem;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.25s ease;
+    z-index: 2;
+}
+
+.acervo-card:hover .acervo-card-zoom-indicator {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.acervo-card-body {
+    padding: 1.35rem 1.4rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.acervo-card-title {
+    font-family: var(--font-heading);
+    color: #fff;
+    font-size: 1.08rem;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.35;
+    min-height: 2.6rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.acervo-card-desc {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.acervo-card.is-hidden {
+    display: none !important;
+}
+
