@@ -523,10 +523,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* ==========================================================================
-       HISTORICAL PHOTOGRAPHIC ARCHIVE FILTERING
+       HISTORICAL PHOTOGRAPHIC ARCHIVE SLIDER & FILTERING
        ========================================================================== */
     const acervoFilterBtns = document.querySelectorAll('.acervo-filter-btn');
     const acervoCards = document.querySelectorAll('.acervo-card');
+    const acervoTrack = document.getElementById('acervo-track');
+    const acervoPrev = document.getElementById('acervo-prev-btn');
+    const acervoNext = document.getElementById('acervo-next-btn');
+
+    if (acervoTrack && acervoPrev && acervoNext) {
+        acervoPrev.addEventListener('click', () => {
+            const scrollDist = acervoTrack.clientWidth * 0.75;
+            acervoTrack.scrollBy({ left: -scrollDist, behavior: 'smooth' });
+        });
+        acervoNext.addEventListener('click', () => {
+            const scrollDist = acervoTrack.clientWidth * 0.75;
+            acervoTrack.scrollBy({ left: scrollDist, behavior: 'smooth' });
+        });
+    }
 
     if (acervoFilterBtns.length > 0 && acervoCards.length > 0) {
         acervoFilterBtns.forEach(btn => {
@@ -543,6 +557,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         card.classList.add('is-hidden');
                     }
                 });
+
+                if (acervoTrack) {
+                    acervoTrack.scrollTo({ left: 0, behavior: 'smooth' });
+                }
             });
         });
     }

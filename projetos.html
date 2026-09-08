@@ -72,9 +72,9 @@
             <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-top: 2rem;">
                 <a href="#destaques" class="subnav-pill" data-en="11 Documented Aircraft" data-pt="11 Aeronaves Documentadas"><i class="fa-solid fa-plane-up"></i> 11 Documented Aircraft</a>
                 <a href="#acervo-consolidado" class="subnav-pill" data-en="25 Projects Register" data-pt="Acervo de 25 Projetos"><i class="fa-solid fa-list-check"></i> 25 Projects Register</a>
-                <a href="#acervo-fotografico" class="subnav-pill" data-en="Historical Photographic Archive" data-pt="Acervo Fotográfico Histórico"><i class="fa-solid fa-camera-retro"></i> Historical Photographic Archive</a>
                 <a href="#education" class="subnav-pill" data-en="Methodology &amp; Faculty" data-pt="Metodologia &amp; Docentes"><i class="fa-solid fa-graduation-cap"></i> Methodology &amp; Faculty</a>
-            </div>
+            <a href="#acervo-fotografico" class="subnav-pill" data-en="Historical Photographic Archive" data-pt="Acervo Fotográfico Histórico"><i class="fa-solid fa-camera-retro"></i> Historical Photographic Archive</a>
+                </div>
         </div>
     </section>
 
@@ -336,7 +336,7 @@
     </section>
 
     <!-- Complete Historical Projects Archive (25 Documented Entries) -->
-    <section class="historical-index-section" id="acervo" style="padding: 6rem 0; background: var(--bg-surface); border-top: 1px solid var(--border-light);">
+    <section class="historical-index-section" id="acervo-consolidado" style="padding: 6rem 0; background: var(--bg-surface); border-top: 1px solid var(--border-light);">
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <span class="section-tag" data-en="Comprehensive Archive" data-pt="Acervo Completo">Comprehensive Archive</span>
@@ -615,8 +615,150 @@
         </div>
     </section>
 
+    <!-- Engineering Education Section -->
+    <section class="education-section" id="education" style="padding: 5.5rem 0; border-top: 1px solid var(--border-light);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" data-en="Methodology" data-pt="Metodologia">Methodology</span>
+                <h2 data-en="Design, Build, Test, Fly, Educate" data-pt="Projetar, Construir, Ensaia, Voar, Educar">Design, Build, Test, Fly, Educate</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div style="max-width: 850px; margin: 0 auto;" class="animate-on-scroll">
+                <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 2.5rem; text-align: center;" data-en="At introductory levels, students formulate mission specifications, review historical designs, and support sizing choices with mathematical physics. As projects mature, student teams engage in detailed CAD drafting, structural fabrication, sensor calibration, and flight-test evaluation. Conceptual coursework and flight-proven aircraft form two complementary pillars of learning." data-pt="Nos níveis introdutórios, os alunos formulam requisitos de missão, revisam projetos históricos e sustentam escolhas com física matemática. À medida que os projetos amadurecem, as equipes participam de modelagem detalhada em CAD, fabricação estrutural, calibração de sensores e avaliação em ensaios de voo. Projetos conceituais e aeronaves voadas formam dois pilares complementares de aprendizado.">
+                    At introductory levels, students formulate mission specifications, review historical designs, and support sizing choices with mathematical physics. As projects mature, student teams engage in detailed CAD drafting, structural fabrication, sensor calibration, and flight-test evaluation. Conceptual coursework and flight-proven aircraft form two complementary pillars of learning.
+                </p>
+
+
+                <!-- Hands-On Workshop & Airframe Redesign Photographic Record -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin: 3rem 0 3.5rem 0;">
+                    <!-- Card 1: Student in Cockpit -->
+                    <div style="background: var(--bg-panel); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+                        <div style="position: relative; height: 340px; overflow: hidden;">
+                            <img src="assets/estudante_cockpit_oficina.webp" alt="Aerospace engineering student in cockpit during ergonomic and systems fit-check" style="width: 100%; height: 100%; object-fit: cover; display: block;" class="zoomable-img">
+                            <span style="position: absolute; top: 1rem; left: 1rem; background: rgba(10, 18, 30, 0.85); backdrop-filter: blur(8px); border: 1px solid var(--border-light); padding: 0.35rem 0.75rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan); font-weight: 700; letter-spacing: 0.08em;">// HANDS-ON ERGONOMICS</span>
+                        </div>
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h4 style="font-family: var(--font-heading); color: #fff; font-size: 1.15rem; margin: 0 0 0.5rem 0; min-height: 2.8rem; display: flex; align-items: flex-start;" data-en="Cockpit Ergonomics &amp; Systems Fitting" data-pt="Ergonomia de Cabine &amp; Ajuste de Sistemas">Cockpit Ergonomics &amp; Systems Fitting</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0;" data-en="Undergraduate aerospace engineering student testing flight-control stick travel, rudder linkage clearance, and cockpit seating geometry inside the welded tubular airframe at the CEA workshop." data-pt="Estudante de engenharia aeroespacial avaliando o curso dos comandos de voo, folga de pedais e geometria de assento na célula tubular de aço soldado na oficina do CEA.">
+                                Undergraduate aerospace engineering student testing flight-control stick travel, rudder linkage clearance, and cockpit seating geometry inside the welded tubular airframe at the CEA workshop.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Aircraft Redesign & Airframe Structure -->
+                    <div style="background: var(--bg-panel); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+                        <div style="position: relative; height: 340px; overflow: hidden;">
+                            <img src="assets/reprojeto_aeronave_estrutura.webp" alt="Welded tubular biplane airframe structure under redesign in CEA workshop" style="width: 100%; height: 100%; object-fit: cover; display: block;" class="zoomable-img">
+                            <span style="position: absolute; top: 1rem; left: 1rem; background: rgba(10, 18, 30, 0.85); backdrop-filter: blur(8px); border: 1px solid var(--border-light); padding: 0.35rem 0.75rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan); font-weight: 700; letter-spacing: 0.08em;">// AIRFRAME REDESIGN</span>
+                        </div>
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h4 style="font-family: var(--font-heading); color: #fff; font-size: 1.15rem; margin: 0 0 0.5rem 0; min-height: 2.8rem; display: flex; align-items: flex-start;" data-en="Airframe Redesign &amp; Structural Assembly" data-pt="Reprojeto Estrutural &amp; Montagem da Célula">Airframe Redesign &amp; Structural Assembly</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0;" data-en="Structural assembly and aeronautical redesign of a light biplane tubular airframe. Students inspect welded truss joints, wing mounting brackets, and empennage alignment in the CEA workshop." data-pt="Montagem estrutural e reprojeto aeronáutico de célula tubular de biplano leve. Estudantes inspecionam juntas soldadas, berço do motor, montantes de asa e alinhamento de empenagem na oficina do CEA.">
+                                Structural assembly and aeronautical redesign of a light biplane tubular airframe. Students inspect welded truss joints, wing mounting brackets, and empennage alignment in the CEA workshop.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Student Initiative: UAI-SO-FLY AeroDesign Team - Embraer Split Layout -->
+            <div class="embraer-split-grid animate-on-scroll" style="margin: 4.5rem 0 3.5rem 0; padding-top: 3.5rem; border-top: 1px solid var(--border-light);">
+                <!-- Visual Column -->
+                <div class="embraer-visual-col">
+                    <div class="embraer-visual-frame">
+                        <span class="embraer-visual-badge">// STUDENT AERODESIGN · SAE BRASIL</span>
+                        <img src="assets/uai_so_fly_equipe.webp" alt="UAI-SO-FLY UFMG AeroDesign Team at competition with aircraft wings and SAE trophy" class="zoomable-img" style="width: 100%; height: 100%; min-height: 380px; object-fit: cover; display: block;">
+                        <div class="embraer-visual-caption">
+                            <strong style="color: #fff; font-family: var(--font-heading);" data-en="UAI-SO-FLY Competition Team" data-pt="Equipe de Competição UAI-SO-FLY">UAI-SO-FLY Competition Team</strong>
+                            <p style="margin: 0.2rem 0 0 0;" data-en="UFMG engineering students celebrating with high-lift competition wings and national awards at SAE Brasil AeroDesign." data-pt="Estudantes de engenharia da UFMG com asas de alta sustentação e troféus conquistados na competição SAE Brasil AeroDesign.">UFMG engineering students celebrating with high-lift competition wings and national awards at SAE Brasil AeroDesign.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="embraer-content-col">
+                    <div class="embraer-eyebrow">
+                        <span class="dot"></span>
+                        <span data-en="Student Initiative · AeroDesign" data-pt="Iniciativa Estudantil · AeroDesign">Student Initiative · AeroDesign</span>
+                    </div>
+                    <h3 class="embraer-title" style="font-size: 2.1rem;" data-en="UAI-SO-FLY — UFMG’s AeroDesign Team" data-pt="UAI-SO-FLY — Equipe de AeroDesign da UFMG">UAI-SO-FLY — UFMG’s AeroDesign Team</h3>
+                    
+                    <p class="embraer-desc" data-en="UAI-SO-FLY brings students together to apply engineering knowledge through AeroDesign projects. Aircraft design, construction and testing connect classroom learning with practical challenges, teamwork and project development." data-pt="A UAI-SO-FLY reúne estudantes para aplicar conhecimentos de engenharia por meio de projetos de AeroDesign. O projeto aeronáutico, a construção e os ensaios conectam o aprendizado em sala de aula com desafios práticos, trabalho em equipe e desenvolvimento de projetos.">UAI-SO-FLY brings students together to apply engineering knowledge through AeroDesign projects. Aircraft design, construction and testing connect classroom learning with practical challenges, teamwork and project development.</p>
+
+                    <p class="embraer-desc" data-en="The team represents another path for students to gain hands-on aircraft engineering experience during their university education." data-pt="A equipe representa outro caminho para que os alunos adquiram experiência prática em engenharia aeronáutica durante sua formação universitária.">The team represents another path for students to gain hands-on aircraft engineering experience during their university education.</p>
+
+                    <div class="embraer-steps">
+                        <div class="embraer-step-item">
+                            <div class="embraer-step-num">01</div>
+                            <div class="embraer-step-content">
+                                <h4 data-en="Aeronautical Design &amp; Optimization" data-pt="Projeto Aeronáutico &amp; Otimização">Aeronautical Design &amp; Optimization</h4>
+                                <p data-en="Aerodynamic profiling, payload sizing, and stability analysis tailored for SAE Brasil AeroDesign competitive flight profiles." data-pt="Definição de perfis aerodinâmicos, dimensionamento de carga paga e análise de estabilidade para os requisitos da SAE Brasil.">Aerodynamic profiling, payload sizing, and stability analysis tailored for SAE Brasil competitive flight profiles.</p>
+                            </div>
+                        </div>
+                        <div class="embraer-step-item">
+                            <div class="embraer-step-num">02</div>
+                            <div class="embraer-step-content">
+                                <h4 data-en="Hardware Fabrication &amp; Prototyping" data-pt="Fabricação Física &amp; Prototipagem">Hardware Fabrication &amp; Prototyping</h4>
+                                <p data-en="Composite wing skinning, structural spar manufacturing, laser cutting, and precision assembly by engineering undergraduates." data-pt="Laminação de asas em compósitos, longarinas estruturais, corte a laser e montagem de precisão realizada por graduandos.">Composite wing skinning, structural spar manufacturing, laser cutting, and precision assembly by engineering undergraduates.</p>
+                            </div>
+                        </div>
+                        <div class="embraer-step-item">
+                            <div class="embraer-step-num">03</div>
+                            <div class="embraer-step-content">
+                                <h4 data-en="Flight Testing &amp; Competitive Validation" data-pt="Ensaios em Voo &amp; Validação em Competição">Flight Testing &amp; Competitive Validation</h4>
+                                <p data-en="Telemetry data collection, payload flight testing, and national competition flights representing UFMG." data-pt="Coleta de dados por telemetria, ensaios de voo com carga e participação na competição nacional representando a UFMG.">Telemetry data collection, payload flight testing, and national competition flights representing UFMG.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1.75rem;">
+                        <a href="https://www.instagram.com/uaisofly/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.6rem;">
+                            <span data-en="Explore UAI-SO-FLY" data-pt="Conheça a UAI-SO-FLY">Explore UAI-SO-FLY</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.82rem; color: var(--accent-cyan);"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Coordination Blocks (Aligned) -->
+                <div class="coordination-grid animate-on-scroll">
+                    <!-- Joel Laguardia -->
+                    <div class="coord-card cyan-accent">
+                        <div class="coord-card-header">
+                            <img src="assets/joel_laguardia.webp" alt="Joel Laguardia Campos Reis" class="coord-card-avatar zoomable-img">
+                            <div class="coord-card-info">
+                                <span class="coord-card-tag">// CEA COORDINATION</span>
+                                <h3 class="coord-card-title">Joel Laguardia Campos Reis</h3>
+                                <p class="coord-card-role" data-en="Coordinator · Construction &amp; Flight Operations" data-pt="Coordenador · Construção &amp; Operações">Coordinator · Construction &amp; Flight Operations</p>
+                            </div>
+                        </div>
+                        <p class="coord-card-desc" data-en="Leads CEA’s prototype fabrication and experimental flight research, uniting accumulated aeronautical design experience with practical workshop manufacturing, structural testing, and ongoing collaboration with Aeromot." data-pt="Lidera a fabricação de protótipos e a pesquisa experimental em voo do CEA, unindo a experiência acumulada em projeto aeronáutico com a manufatura prática em oficina, ensaios estruturais e cooperação com a Aeromot.">
+                            Leads CEA’s prototype fabrication and experimental flight research, uniting accumulated aeronautical design experience with practical workshop manufacturing, structural testing, and ongoing collaboration with Aeromot.
+                        </p>
+                    </div>
+
+                    <!-- Luiz Henrique Jorge Machado -->
+                    <div class="coord-card blue-accent">
+                        <div class="coord-card-header">
+                            <img src="assets/luiz_henrique_machado.webp" alt="Luiz Henrique Jorge Machado" class="coord-card-avatar zoomable-img">
+                            <div class="coord-card-info">
+                                <span class="coord-card-tag">// CEA DEPUTY COORDINATION</span>
+                                <h3 class="coord-card-title">Luiz Henrique Jorge Machado</h3>
+                                <p class="coord-card-role" data-en="Deputy Coordinator · Educational Continuity &amp; Systems" data-pt="Vice-Coordenador · Continuidade Pedagógica &amp; Sistemas">Deputy Coordinator · Educational Continuity &amp; Systems</p>
+                            </div>
+                        </div>
+                        <p class="coord-card-desc" data-en="Directs the educational continuity of CEA’s aeronautical curriculum, aerospace engineering coursework, student competition teams, and research initiatives with industry partners including Embraer and Boeing." data-pt="Dirige a continuidade pedagógica do currículo aeronáutico do CEA, disciplinas de engenharia aeroespacial, equipes de competição estudantis e iniciativas de pesquisa com parceiros industriais como Embraer e Boeing.">
+                            Directs the educational continuity of CEA’s aeronautical curriculum, aerospace engineering coursework, student competition teams, and research initiatives with industry partners including Embraer and Boeing.
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
     <!-- Historical Photographic Archive Section -->
-    <section class="acervo-fotografico-section" id="acervo-fotografico">
+    <section class="acervo-fotografico-section" id="acervo-fotografico" style="border-top: 1px solid var(--border-light); padding-top: 5.5rem;">
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <span class="section-tag" data-en="// PHYSICAL ENGINEERING RECORD" data-pt="// REGISTRO FOTOGRÁFICO DE ENGENHARIA">// PHYSICAL ENGINEERING RECORD</span>
@@ -651,8 +793,23 @@
                 </button>
             </div>
 
-            <!-- Curated Photographic Gallery Grid -->
-            <div class="acervo-gallery-grid">
+            <!-- Curated Photographic Gallery Slider -->
+            <div class="acervo-slider-wrapper animate-on-scroll">
+                <div class="acervo-slider-header">
+                    <span class="acervo-slider-hint" data-en="&larr; Drag or slide sideways to explore the archive &rarr;" data-pt="&larr; Arraste ou passe para o lado para explorar o acervo &rarr;">
+                        <i class="fa-solid fa-arrows-left-right"></i> Drag or slide sideways to explore the archive
+                    </span>
+                    <div class="acervo-slider-controls">
+                        <button id="acervo-prev-btn" class="acervo-slider-btn" aria-label="Previous slide" title="Previous">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button id="acervo-next-btn" class="acervo-slider-btn" aria-label="Next slide" title="Next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="acervo-gallery-grid" id="acervo-track">
 
                 <!-- 1. CEA-308 Empennage -->
                 <div class="acervo-card animate-on-scroll" data-category="fleet">
@@ -953,116 +1110,11 @@
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- Engineering Education Section -->
-    <section class="education-section" id="education" style="padding: 5.5rem 0; border-top: 1px solid var(--border-light);">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag" data-en="Methodology" data-pt="Metodologia">Methodology</span>
-                <h2 data-en="Design, Build, Test, Fly, Educate" data-pt="Projetar, Construir, Ensaia, Voar, Educar">Design, Build, Test, Fly, Educate</h2>
-                <div class="section-line"></div>
-            </div>
-            
-            <div style="max-width: 850px; margin: 0 auto;" class="animate-on-scroll">
-                <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 2.5rem; text-align: center;" data-en="At introductory levels, students formulate mission specifications, review historical designs, and support sizing choices with mathematical physics. As projects mature, student teams engage in detailed CAD drafting, structural fabrication, sensor calibration, and flight-test evaluation. Conceptual coursework and flight-proven aircraft form two complementary pillars of learning." data-pt="Nos níveis introdutórios, os alunos formulam requisitos de missão, revisam projetos históricos e sustentam escolhas com física matemática. À medida que os projetos amadurecem, as equipes participam de modelagem detalhada em CAD, fabricação estrutural, calibração de sensores e avaliação em ensaios de voo. Projetos conceituais e aeronaves voadas formam dois pilares complementares de aprendizado.">
-                    At introductory levels, students formulate mission specifications, review historical designs, and support sizing choices with mathematical physics. As projects mature, student teams engage in detailed CAD drafting, structural fabrication, sensor calibration, and flight-test evaluation. Conceptual coursework and flight-proven aircraft form two complementary pillars of learning.
-                </p>
-
-
-                <!-- Hands-On Workshop & Airframe Redesign Photographic Record -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin: 3rem 0 3.5rem 0;">
-                    <!-- Card 1: Student in Cockpit -->
-                    <div style="background: var(--bg-panel); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
-                        <div style="position: relative; height: 340px; overflow: hidden;">
-                            <img src="assets/estudante_cockpit_oficina.webp" alt="Aerospace engineering student in cockpit during ergonomic and systems fit-check" style="width: 100%; height: 100%; object-fit: cover; display: block;" class="zoomable-img">
-                            <span style="position: absolute; top: 1rem; left: 1rem; background: rgba(10, 18, 30, 0.85); backdrop-filter: blur(8px); border: 1px solid var(--border-light); padding: 0.35rem 0.75rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan); font-weight: 700; letter-spacing: 0.08em;">// HANDS-ON ERGONOMICS</span>
-                        </div>
-                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
-                            <h4 style="font-family: var(--font-heading); color: #fff; font-size: 1.15rem; margin: 0 0 0.5rem 0; min-height: 2.8rem; display: flex; align-items: flex-start;" data-en="Cockpit Ergonomics &amp; Systems Fitting" data-pt="Ergonomia de Cabine &amp; Ajuste de Sistemas">Cockpit Ergonomics &amp; Systems Fitting</h4>
-                            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0;" data-en="Undergraduate aerospace engineering student testing flight-control stick travel, rudder linkage clearance, and cockpit seating geometry inside the welded tubular airframe at the CEA workshop." data-pt="Estudante de engenharia aeroespacial avaliando o curso dos comandos de voo, folga de pedais e geometria de assento na célula tubular de aço soldado na oficina do CEA.">
-                                Undergraduate aerospace engineering student testing flight-control stick travel, rudder linkage clearance, and cockpit seating geometry inside the welded tubular airframe at the CEA workshop.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 2: Aircraft Redesign & Airframe Structure -->
-                    <div style="background: var(--bg-panel); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
-                        <div style="position: relative; height: 340px; overflow: hidden;">
-                            <img src="assets/reprojeto_aeronave_estrutura.webp" alt="Welded tubular biplane airframe structure under redesign in CEA workshop" style="width: 100%; height: 100%; object-fit: cover; display: block;" class="zoomable-img">
-                            <span style="position: absolute; top: 1rem; left: 1rem; background: rgba(10, 18, 30, 0.85); backdrop-filter: blur(8px); border: 1px solid var(--border-light); padding: 0.35rem 0.75rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan); font-weight: 700; letter-spacing: 0.08em;">// AIRFRAME REDESIGN</span>
-                        </div>
-                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
-                            <h4 style="font-family: var(--font-heading); color: #fff; font-size: 1.15rem; margin: 0 0 0.5rem 0; min-height: 2.8rem; display: flex; align-items: flex-start;" data-en="Airframe Redesign &amp; Structural Assembly" data-pt="Reprojeto Estrutural &amp; Montagem da Célula">Airframe Redesign &amp; Structural Assembly</h4>
-                            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0;" data-en="Structural assembly and aeronautical redesign of a light biplane tubular airframe. Students inspect welded truss joints, wing mounting brackets, and empennage alignment in the CEA workshop." data-pt="Montagem estrutural e reprojeto aeronáutico de célula tubular de biplano leve. Estudantes inspecionam juntas soldadas, berço do motor, montantes de asa e alinhamento de empenagem na oficina do CEA.">
-                                Structural assembly and aeronautical redesign of a light biplane tubular airframe. Students inspect welded truss joints, wing mounting brackets, and empennage alignment in the CEA workshop.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Student Initiative: UAI-SO-FLY AeroDesign Team -->
-                <div class="uai-so-fly-card animate-on-scroll" style="background: var(--bg-panel); border: 1px solid var(--border-light); border-top: 4px solid var(--accent-cyan); border-radius: 12px; padding: 2.2rem 2.5rem; margin: 0 0 3.5rem 0; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);">
-                    <div style="display: flex; flex-direction: column; gap: 1rem;">
-                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
-                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); font-weight: 700; letter-spacing: 0.08em;" data-en="// STUDENT INITIATIVE · AERODESIGN" data-pt="// INICIATIVA ESTUDANTIL · AERODESIGN">// STUDENT INITIATIVE · AERODESIGN</span>
-                            <span style="background: rgba(0, 240, 255, 0.08); border: 1px solid rgba(0, 240, 255, 0.2); padding: 0.25rem 0.75rem; border-radius: 20px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan); font-weight: 600;" data-en="SAE Brasil Competition" data-pt="Competição SAE Brasil">SAE Brasil Competition</span>
-                        </div>
-                        <h3 style="font-family: var(--font-heading); color: #fff; font-size: 1.45rem; margin: 0.2rem 0 0.4rem 0; line-height: 1.3;" data-en="UAI-SO-FLY — UFMG’s AeroDesign Team" data-pt="UAI-SO-FLY — Equipe de AeroDesign da UFMG">
-                            UAI-SO-FLY — UFMG’s AeroDesign Team
-                        </h3>
-                        <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-muted); margin: 0;" data-en="UAI-SO-FLY brings students together to apply engineering knowledge through AeroDesign projects. Aircraft design, construction and testing connect classroom learning with practical challenges, teamwork and project development." data-pt="A UAI-SO-FLY reúne estudantes para aplicar conhecimentos de engenharia por meio de projetos de AeroDesign. O projeto aeronáutico, a construção e os ensaios conectam o aprendizado em sala de aula com desafios práticos, trabalho em equipe e desenvolvimento de projetos.">
-                            UAI-SO-FLY brings students together to apply engineering knowledge through AeroDesign projects. Aircraft design, construction and testing connect classroom learning with practical challenges, teamwork and project development.
-                        </p>
-                        <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-muted); margin: 0;" data-en="The team represents another path for students to gain hands-on aircraft engineering experience during their university education." data-pt="A equipe representa outro caminho para que os alunos adquiram experiência prática em engenharia aeronáutica durante sua formação universitária.">
-                            The team represents another path for students to gain hands-on aircraft engineering experience during their university education.
-                        </p>
-                        <div style="margin-top: 0.75rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
-                            <a href="https://www.instagram.com/uaisofly/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="border-color: rgba(0, 240, 255, 0.35); color: #fff; display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.7rem 1.6rem; font-size: 0.9rem;">
-                                <span data-en="Explore UAI-SO-FLY" data-pt="Conheça a UAI-SO-FLY">Explore UAI-SO-FLY</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.82rem; color: var(--accent-cyan);"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Coordination Blocks (Aligned) -->
-                <div class="coordination-grid animate-on-scroll">
-                    <!-- Joel Laguardia -->
-                    <div class="coord-card cyan-accent">
-                        <div class="coord-card-header">
-                            <img src="assets/joel_laguardia.webp" alt="Joel Laguardia Campos Reis" class="coord-card-avatar zoomable-img">
-                            <div class="coord-card-info">
-                                <span class="coord-card-tag">// CEA COORDINATION</span>
-                                <h3 class="coord-card-title">Joel Laguardia Campos Reis</h3>
-                                <p class="coord-card-role" data-en="Coordinator · Construction &amp; Flight Operations" data-pt="Coordenador · Construção &amp; Operações">Coordinator · Construction &amp; Flight Operations</p>
-                            </div>
-                        </div>
-                        <p class="coord-card-desc" data-en="Leads CEA’s prototype fabrication and experimental flight research, uniting accumulated aeronautical design experience with practical workshop manufacturing, structural testing, and ongoing collaboration with Aeromot." data-pt="Lidera a fabricação de protótipos e a pesquisa experimental em voo do CEA, unindo a experiência acumulada em projeto aeronáutico com a manufatura prática em oficina, ensaios estruturais e cooperação com a Aeromot.">
-                            Leads CEA’s prototype fabrication and experimental flight research, uniting accumulated aeronautical design experience with practical workshop manufacturing, structural testing, and ongoing collaboration with Aeromot.
-                        </p>
-                    </div>
-
-                    <!-- Luiz Henrique Jorge Machado -->
-                    <div class="coord-card blue-accent">
-                        <div class="coord-card-header">
-                            <img src="assets/luiz_henrique_machado.webp" alt="Luiz Henrique Jorge Machado" class="coord-card-avatar zoomable-img">
-                            <div class="coord-card-info">
-                                <span class="coord-card-tag">// CEA DEPUTY COORDINATION</span>
-                                <h3 class="coord-card-title">Luiz Henrique Jorge Machado</h3>
-                                <p class="coord-card-role" data-en="Deputy Coordinator · Educational Continuity &amp; Systems" data-pt="Vice-Coordenador · Continuidade Pedagógica &amp; Sistemas">Deputy Coordinator · Educational Continuity &amp; Systems</p>
-                            </div>
-                        </div>
-                        <p class="coord-card-desc" data-en="Directs the educational continuity of CEA’s aeronautical curriculum, aerospace engineering coursework, student competition teams, and research initiatives with industry partners including Embraer and Boeing." data-pt="Dirige a continuidade pedagógica do currículo aeronáutico do CEA, disciplinas de engenharia aeroespacial, equipes de competição estudantis e iniciativas de pesquisa com parceiros industriais como Embraer e Boeing.">
-                            Directs the educational continuity of CEA’s aeronautical curriculum, aerospace engineering coursework, student competition teams, and research initiatives with industry partners including Embraer and Boeing.
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     </main>
 
     <!-- Footer -->

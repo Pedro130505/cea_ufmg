@@ -5452,14 +5452,94 @@ textarea {
     box-shadow: 0 0 16px rgba(14, 165, 233, 0.4);
 }
 
+.acervo-slider-wrapper {
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+.acervo-slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    padding: 0 0.5rem;
+}
+
+.acervo-slider-hint {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.acervo-slider-hint i {
+    color: var(--accent-cyan);
+}
+
+.acervo-slider-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.acervo-slider-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--border-light);
+    background: var(--bg-panel);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+}
+
+.acervo-slider-btn:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    background: rgba(14, 165, 233, 0.15);
+    transform: scale(1.08);
+}
+
 .acervo-gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 1.75rem;
-    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0.5rem 0.25rem 1.75rem 0.25rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.acervo-gallery-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.acervo-gallery-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+.acervo-gallery-grid::-webkit-scrollbar-thumb {
+    background: rgba(14, 165, 233, 0.45);
+    border-radius: 6px;
+    border: 1px solid rgba(14, 165, 233, 0.2);
+}
+
+.acervo-gallery-grid::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-cyan);
 }
 
 .acervo-card {
+    flex: 0 0 350px;
+    width: 350px;
+    scroll-snap-align: start;
     background: var(--bg-panel);
     border: 1px solid var(--border-light);
     border-radius: 12px;
@@ -5468,6 +5548,13 @@ textarea {
     flex-direction: column;
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+}
+
+@media (max-width: 600px) {
+    .acervo-card {
+        flex: 0 0 290px;
+        width: 290px;
+    }
 }
 
 .acervo-card:hover {
@@ -5567,5 +5654,59 @@ textarea {
 
 .acervo-card.is-hidden {
     display: none !important;
+}
+
+/* ==========================================================================
+   PROTOTYPING DUAL IMAGE GRID
+   ========================================================================== */
+.prototyping-dual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    background: rgba(56, 189, 248, 0.15);
+}
+
+.prototyping-dual-col {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+}
+
+.prototyping-dual-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.prototyping-dual-col:hover img {
+    transform: scale(1.04);
+}
+
+.prototyping-subbadge {
+    position: absolute;
+    bottom: 0.65rem;
+    left: 0.65rem;
+    background: rgba(5, 10, 24, 0.88);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    color: var(--accent-cyan);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    padding: 0.22rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    z-index: 2;
+}
+
+@media (max-width: 580px) {
+    .prototyping-dual-grid {
+        grid-template-columns: 1fr;
+    }
+    .prototyping-dual-col {
+        height: 250px;
+    }
 }
 
