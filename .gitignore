@@ -7,4 +7,7 @@ node_modules/
 .idea/
 *.pyc
 __pycache__/
-
+*.xlsx
+*.pdf
+*.txt
+server.py

@@ -264,10 +264,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contact-form');
     const successPane = document.getElementById('form-success');
     const resetFormBtn = document.getElementById('btn-reset-form');
+    const errorBanner = document.getElementById('form-error-banner');
+    const mailtoFallback = document.getElementById('form-mailto-fallback');
 
     if (contactForm) {
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
+
+            if (errorBanner) errorBanner.style.display = 'none';
 
             // Anti-Spam Honeypot Verification
             const honeyField = contactForm.querySelector('input[name="_honey"]');
@@ -284,11 +288,35 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.innerHTML = `<span>${sendingText}</span> <i class="fa-solid fa-spinner fa-spin"></i>`;
             submitBtn.disabled = true;
 
+            const nameInput = contactForm.querySelector('#name');
+            const emailInput = contactForm.querySelector('#email');
+            const subjectSelect = contactForm.querySelector('#subject');
+            const messageInput = contactForm.querySelector('#message');
+
+            const nameVal = nameInput ? nameInput.value.trim() : '';
+            const emailVal = emailInput ? emailInput.value.trim() : '';
+            const subjectVal = subjectSelect && subjectSelect.value ? subjectSelect.value : 'General Enquiry';
+            const messageVal = messageInput ? messageInput.value.trim() : '';
+
             try {
                 const formData = new FormData(contactForm);
-                const subjectSelect = contactForm.querySelector('#subject');
-                const selectedSubject = subjectSelect && subjectSelect.value ? subjectSelect.value : 'General Enquiry';
-                formData.set('_subject', `[CEA-UFMG Website] ${selectedSubject}`);
+                formData.set('_subject', `[CEA-UFMG Website] ${subjectVal}`);
+
+                // Clean and sanitize _cc list: strip any spaces between commas to prevent FormSubmit 500 errors
+                if (formData.has('_cc')) {
+                    const rawCc = formData.get('_cc');
+                    const cleanCc = rawCc.split(',').map(s => s.trim()).filter(Boolean).join(',');
+                    if (cleanCc) {
+                        formData.set('_cc', cleanCc);
+                    } else {
+                        formData.delete('_cc');
+                    }
+                }
+
+                // Remove _honey from payload if empty
+                if (formData.has('_honey') && !formData.get('_honey')) {
+                    formData.delete('_honey');
+                }
 
                 const response = await fetch('https://formsubmit.co/ajax/Lhmachado.ufmg@gmail.com', {
                     method: 'POST',
@@ -298,20 +326,40 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: formData
                 });
 
-                const result = await response.json();
+                let result = {};
+                try {
+                    result = await response.json();
+                } catch (jsonErr) {
+                    result = {};
+                }
 
-                if (response.ok && (result.success === "true" || result.success === true || result.message)) {
+                if (response.ok && (result.success === "true" || result.success === true || result.message === "The form was submitted successfully.")) {
                     contactForm.reset();
+                    if (errorBanner) errorBanner.style.display = 'none';
                     if (successPane) successPane.classList.add('active');
                 } else {
                     throw new Error(result.message || 'Form submission failed');
                 }
             } catch (err) {
                 console.error('Contact form submission error:', err);
-                const errorMsg = currentLang === 'pt'
-                    ? 'Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente ou entre em contato diretamente pelo e-mail do laboratório.'
-                    : 'An error occurred while sending your message. Please try again or contact the laboratory directly via email.';
-                alert(errorMsg);
+
+                // Build mailto link so user doesn't lose their message
+                const mailtoSubject = encodeURIComponent(`[CEA-UFMG] ${subjectVal} - ${nameVal}`);
+                const mailtoBody = encodeURIComponent(`Nome: ${nameVal}\nE-mail: ${emailVal}\nAssunto: ${subjectVal}\n\nMensagem:\n${messageVal}`);
+                const mailtoUrl = `mailto:Lhmachado.ufmg@gmail.com?cc=laguardia@demec.ufmg.br,lhmachado@ufmg.br&subject=${mailtoSubject}&body=${mailtoBody}`;
+
+                if (mailtoFallback) {
+                    mailtoFallback.href = mailtoUrl;
+                }
+
+                if (errorBanner) {
+                    errorBanner.style.display = 'flex';
+                } else {
+                    const errorMsg = currentLang === 'pt'
+                        ? 'Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente ou entre em contato diretamente pelo e-mail do laboratório.'
+                        : 'An error occurred while sending your message. Please try again or contact the laboratory directly via email.';
+                    alert(errorMsg);
+                }
             } finally {
                 submitBtn.innerHTML = originalBtnHTML;
                 submitBtn.disabled = false;
@@ -323,6 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resetFormBtn.addEventListener('click', () => {
             contactForm.reset();
             if (successPane) successPane.classList.remove('active');
+            if (errorBanner) errorBanner.style.display = 'none';
         });
     }
 
