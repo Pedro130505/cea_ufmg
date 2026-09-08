@@ -633,7 +633,7 @@
                             <span style="position: absolute; top: 1rem; left: 1rem; background: rgba(10, 18, 30, 0.85); backdrop-filter: blur(8px); border: 1px solid var(--border-light); padding: 0.35rem 0.75rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan); font-weight: 700; letter-spacing: 0.08em;">// HANDS-ON ERGONOMICS</span>
                         </div>
                         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
-                            <h4 style="font-family: var(--font-heading); color: #fff; font-size: 1.15rem; margin: 0 0 0.5rem 0;" data-en="Cockpit Ergonomics &amp; Systems Fitting" data-pt="Ergonomia de Cabine &amp; Ajuste de Sistemas">Cockpit Ergonomics &amp; Systems Fitting</h4>
+                            <h4 style="font-family: var(--font-heading); color: #fff; font-size: 1.15rem; margin: 0 0 0.5rem 0; min-height: 2.8rem; display: flex; align-items: flex-start;" data-en="Cockpit Ergonomics &amp; Systems Fitting" data-pt="Ergonomia de Cabine &amp; Ajuste de Sistemas">Cockpit Ergonomics &amp; Systems Fitting</h4>
                             <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0;" data-en="Undergraduate aerospace engineering student testing flight-control stick travel, rudder linkage clearance, and cockpit seating geometry inside the welded tubular airframe at the CEA workshop." data-pt="Estudante de engenharia aeroespacial avaliando o curso dos comandos de voo, folga de pedais e geometria de assento na célula tubular de aço soldado na oficina do CEA.">
                                 Undergraduate aerospace engineering student testing flight-control stick travel, rudder linkage clearance, and cockpit seating geometry inside the welded tubular airframe at the CEA workshop.
                             </p>
@@ -647,7 +647,7 @@
                             <span style="position: absolute; top: 1rem; left: 1rem; background: rgba(10, 18, 30, 0.85); backdrop-filter: blur(8px); border: 1px solid var(--border-light); padding: 0.35rem 0.75rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan); font-weight: 700; letter-spacing: 0.08em;">// AIRFRAME REDESIGN</span>
                         </div>
                         <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
-                            <h4 style="font-family: var(--font-heading); color: #fff; font-size: 1.15rem; margin: 0 0 0.5rem 0;" data-en="Airframe Redesign &amp; Structural Assembly" data-pt="Reprojeto Estrutural &amp; Montagem da Célula">Airframe Redesign &amp; Structural Assembly</h4>
+                            <h4 style="font-family: var(--font-heading); color: #fff; font-size: 1.15rem; margin: 0 0 0.5rem 0; min-height: 2.8rem; display: flex; align-items: flex-start;" data-en="Airframe Redesign &amp; Structural Assembly" data-pt="Reprojeto Estrutural &amp; Montagem da Célula">Airframe Redesign &amp; Structural Assembly</h4>
                             <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0;" data-en="Structural assembly and aeronautical redesign of a light biplane tubular airframe. Students inspect welded truss joints, wing mounting brackets, and empennage alignment in the CEA workshop." data-pt="Montagem estrutural e reprojeto aeronáutico de célula tubular de biplano leve. Estudantes inspecionam juntas soldadas, berço do motor, montantes de asa e alinhamento de empenagem na oficina do CEA.">
                                 Structural assembly and aeronautical redesign of a light biplane tubular airframe. Students inspect welded truss joints, wing mounting brackets, and empennage alignment in the CEA workshop.
                             </p>
@@ -655,34 +655,34 @@
                     </div>
                 </div>
 
-                <!-- Coordination Blocks -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <!-- Coordination Blocks (Aligned) -->
+                <div class="coordination-grid animate-on-scroll">
                     <!-- Joel Laguardia -->
-                    <div style="background: var(--bg-panel); border: 1px solid var(--border-light); border-top: 4px solid var(--accent-cyan); border-radius: 12px; padding: 2rem;">
-                        <div style="display: flex; align-items: center; gap: 1.2rem; margin-bottom: 1.2rem;">
-                            <img src="assets/joel_laguardia.webp" alt="Joel Laguardia Campos Reis" style="width: 68px; height: 68px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-cyan); flex-shrink: 0;" class="zoomable-img">
-                            <div>
-                                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan);">// CEA COORDINATION</span>
-                                <h3 style="font-family: var(--font-heading); font-size: 1.25rem; color: #fff; margin: 0.2rem 0 0.2rem 0;">Joel Laguardia Campos Reis</h3>
-                                <p style="color: var(--accent-cyan); font-size: 0.88rem; font-weight: 600; margin: 0;">Coordinator</p>
+                    <div class="coord-card cyan-accent">
+                        <div class="coord-card-header">
+                            <img src="assets/joel_laguardia.webp" alt="Joel Laguardia Campos Reis" class="coord-card-avatar zoomable-img">
+                            <div class="coord-card-info">
+                                <span class="coord-card-tag">// CEA COORDINATION</span>
+                                <h3 class="coord-card-title">Joel Laguardia Campos Reis</h3>
+                                <p class="coord-card-role" data-en="Coordinator · Construction &amp; Flight Operations" data-pt="Coordenador · Construção &amp; Operações">Coordinator · Construction &amp; Flight Operations</p>
                             </div>
                         </div>
-                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;" data-en="Leads CEA’s prototype fabrication and experimental flight research, uniting accumulated aeronautical design experience with practical workshop manufacturing, structural testing, and ongoing collaboration with Aeromot." data-pt="Lidera a fabricação de protótipos e a pesquisa experimental em voo do CEA, unindo a experiência acumulada em projeto aeronáutico com a manufatura prática em oficina, ensaios estruturais e cooperação com a Aeromot.">
+                        <p class="coord-card-desc" data-en="Leads CEA’s prototype fabrication and experimental flight research, uniting accumulated aeronautical design experience with practical workshop manufacturing, structural testing, and ongoing collaboration with Aeromot." data-pt="Lidera a fabricação de protótipos e a pesquisa experimental em voo do CEA, unindo a experiência acumulada em projeto aeronáutico com a manufatura prática em oficina, ensaios estruturais e cooperação com a Aeromot.">
                             Leads CEA’s prototype fabrication and experimental flight research, uniting accumulated aeronautical design experience with practical workshop manufacturing, structural testing, and ongoing collaboration with Aeromot.
                         </p>
                     </div>
 
                     <!-- Luiz Henrique Jorge Machado -->
-                    <div style="background: var(--bg-panel); border: 1px solid var(--border-light); border-top: 4px solid var(--accent); border-radius: 12px; padding: 2rem;">
-                        <div style="display: flex; align-items: center; gap: 1.2rem; margin-bottom: 1.2rem;">
-                            <img src="assets/luiz_henrique_machado.webp" alt="Luiz Henrique Jorge Machado" style="width: 68px; height: 68px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent); flex-shrink: 0;" class="zoomable-img">
-                            <div>
-                                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent);">// CEA DEPUTY COORDINATION</span>
-                                <h3 style="font-family: var(--font-heading); font-size: 1.25rem; color: #fff; margin: 0.2rem 0 0.2rem 0;">Luiz Henrique Jorge Machado</h3>
-                                <p style="color: var(--accent); font-size: 0.88rem; font-weight: 600; margin: 0;">Deputy Coordinator</p>
+                    <div class="coord-card blue-accent">
+                        <div class="coord-card-header">
+                            <img src="assets/luiz_henrique_machado.webp" alt="Luiz Henrique Jorge Machado" class="coord-card-avatar zoomable-img">
+                            <div class="coord-card-info">
+                                <span class="coord-card-tag">// CEA DEPUTY COORDINATION</span>
+                                <h3 class="coord-card-title">Luiz Henrique Jorge Machado</h3>
+                                <p class="coord-card-role" data-en="Deputy Coordinator · Educational Continuity &amp; Systems" data-pt="Vice-Coordenador · Continuidade Pedagógica &amp; Sistemas">Deputy Coordinator · Educational Continuity &amp; Systems</p>
                             </div>
                         </div>
-                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;" data-en="Directs the educational continuity of CEA’s aeronautical curriculum, aerospace engineering coursework, student competition teams, and research initiatives with industry partners including Embraer and Boeing." data-pt="Dirige a continuidade pedagógica do currículo aeronáutico do CEA, disciplinas de engenharia aeroespacial, equipes de competição estudantis e iniciativas de pesquisa com parceiros industriais como Embraer e Boeing.">
+                        <p class="coord-card-desc" data-en="Directs the educational continuity of CEA’s aeronautical curriculum, aerospace engineering coursework, student competition teams, and research initiatives with industry partners including Embraer and Boeing." data-pt="Dirige a continuidade pedagógica do currículo aeronáutico do CEA, disciplinas de engenharia aeroespacial, equipes de competição estudantis e iniciativas de pesquisa com parceiros industriais como Embraer e Boeing.">
                             Directs the educational continuity of CEA’s aeronautical curriculum, aerospace engineering coursework, student competition teams, and research initiatives with industry partners including Embraer and Boeing.
                         </p>
                     </div>

@@ -5148,3 +5148,228 @@ textarea {
     color: var(--accent-cyan);
     gap: 0.8rem;
 }
+
+
+/* ==========================================================================
+   HISTORICAL FACULTY GRID & CARDS (Strict Alignment & Professional Symmetry)
+   ========================================================================== */
+.historical-faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3.5rem;
+}
+
+@media (max-width: 1080px) {
+    .historical-faculty-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .historical-faculty-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.faculty-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 2.2rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.faculty-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(56, 189, 248, 0.4);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.faculty-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+    min-height: 115px;
+}
+
+.faculty-card-avatar {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-cyan);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.faculty-card-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.faculty-card-tag {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--accent-cyan);
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.faculty-card-title {
+    font-family: var(--font-heading);
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.25;
+    margin: 0 0 0.35rem 0;
+    min-height: 2.8rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.faculty-card-role {
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+    line-height: 1.35;
+    margin: 0;
+    min-height: 2.3rem;
+}
+
+.faculty-card-desc {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Coordination Cards Alignment */
+.coordination-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 960px;
+    margin: 3.5rem auto 0 auto;
+}
+
+@media (max-width: 768px) {
+    .coordination-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.coord-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 2.2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.coord-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.coord-card.cyan-accent {
+    border-top: 4px solid var(--accent-cyan);
+}
+
+.coord-card.blue-accent {
+    border-top: 4px solid var(--accent);
+}
+
+.coord-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+    min-height: 110px;
+}
+
+.coord-card-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.coord-card.cyan-accent .coord-card-avatar {
+    border: 2px solid var(--accent-cyan);
+}
+
+.coord-card.blue-accent .coord-card-avatar {
+    border: 2px solid var(--accent);
+}
+
+.coord-card-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.coord-card-tag {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.coord-card.cyan-accent .coord-card-tag {
+    color: var(--accent-cyan);
+}
+
+.coord-card.blue-accent .coord-card-tag {
+    color: var(--accent);
+}
+
+.coord-card-title {
+    font-family: var(--font-heading);
+    font-size: 1.28rem;
+    color: #fff;
+    margin: 0 0 0.35rem 0;
+    line-height: 1.25;
+    min-height: 2.8rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.coord-card-role {
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.35;
+    min-height: 2.4rem;
+}
+
+.coord-card.cyan-accent .coord-card-role {
+    color: var(--accent-cyan);
+}
+
+.coord-card.blue-accent .coord-card-role {
+    color: var(--accent);
+}
+
+.coord-card-desc {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin: 0;
+    flex-grow: 1;
+}
