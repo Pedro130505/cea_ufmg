@@ -9,7 +9,8 @@
 
 ## Main Resources & Pages
 - [Home & Institutional Overview](https://cea.demec.ufmg.br/index.html): History, mission, laboratory infrastructure, technological matrix, and contact info.
-- [Aircraft Projects & Fleet](https://cea.demec.ufmg.br/projetos.html): Technical specifications of Anequim (521 km/h), CEA-308, CB-2 Minuano, Gaivota CB-1, and active prototypes.
+- [Aircraft Fleet & Records](https://cea.demec.ufmg.br/aircraft.html): Technical specifications and histories of Anequim (521 km/h), CEA-308, CB-2 Minuano, Gaivota CB-1, Mehari, and active prototypes.
+- [Projects & Education](https://cea.demec.ufmg.br/education.html): Hands-on methodology, student design projects, UAI-SO-FLY AeroDesign team, research partnerships, and the 25-project historical register.
 - [Technological Solutions & Services](https://cea.demec.ufmg.br/solucoes.html): CFD consulting, composite FEA calculations, flight test telemetry, and wind tunnel validation.
 - [Founder Tribute - Prof. Cláudio Barros](https://cea.demec.ufmg.br/homenagem.html): Akaflieg philosophy pioneer, historical legacy, and design timeline.
 - [Publications & Research Papers](https://cea.demec.ufmg.br/artigos.html): Peer-reviewed scientific output and technical flight test reports.
