@@ -632,5 +632,50 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    /* ==========================================================================
+       READ MORE / READ LESS FOR AIRCRAFT EXTENDED HISTORIES
+       ========================================================================== */
+    document.querySelectorAll('.read-more-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const cardInner = btn.closest('.aircraft-block-inner');
+            if (!cardInner) return;
+            const extendedBox = cardInner.querySelector('.aircraft-extended-history');
+            if (!extendedBox) return;
+
+            const isExpanded = extendedBox.classList.contains('active');
+            if (isExpanded) {
+                extendedBox.classList.remove('active');
+                btn.classList.remove('active');
+                const lang = localStorage.getItem('cea_lang') || 'en';
+                btn.querySelector('.read-more-text').textContent = lang === 'pt' ? 'Leia mais' : 'Read more';
+            } else {
+                extendedBox.classList.add('active');
+                btn.classList.add('active');
+                const lang = localStorage.getItem('cea_lang') || 'en';
+                btn.querySelector('.read-more-text').textContent = lang === 'pt' ? 'Recolher' : 'Read less';
+            }
+        });
+    });
+
+    /* ==========================================================================
+       HISTORICAL PROJECT REGISTER ACCORDION / TOGGLE
+       ========================================================================== */
+    const registerToggleBtn = document.getElementById('register-accordion-toggle');
+    const registerCollapseContent = document.getElementById('register-accordion-content');
+
+    if (registerToggleBtn && registerCollapseContent) {
+        registerToggleBtn.addEventListener('click', () => {
+            const isOpen = registerCollapseContent.classList.contains('active');
+            if (isOpen) {
+                registerCollapseContent.classList.remove('active');
+                registerToggleBtn.classList.remove('active');
+            } else {
+                registerCollapseContent.classList.add('active');
+                registerToggleBtn.classList.add('active');
+            }
+        });
+    }
+
 });
+
 

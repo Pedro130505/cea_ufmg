@@ -5710,3 +5710,125 @@ textarea {
     }
 }
 
+/* ==========================================================================
+   READ MORE / EXTENDED HISTORY & ACCORDION STYLES
+   ========================================================================== */
+.read-more-btn {
+    background: transparent;
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    padding: 0.45rem 1rem;
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.8rem;
+    transition: all 0.25s ease;
+}
+
+.read-more-btn:hover {
+    background: rgba(56, 189, 248, 0.12);
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.2);
+}
+
+.read-more-btn i {
+    transition: transform 0.3s ease;
+    font-size: 0.75rem;
+}
+
+.read-more-btn.active i {
+    transform: rotate(180deg);
+}
+
+.aircraft-extended-history {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.45s ease-in-out, opacity 0.35s ease-in-out, margin 0.3s ease;
+    background: rgba(14, 165, 233, 0.04);
+    border-left: 2px solid var(--accent-cyan);
+    border-radius: 0 6px 6px 0;
+    padding: 0 1rem;
+    margin-top: 0;
+}
+
+.aircraft-extended-history.active {
+    max-height: 800px;
+    opacity: 1;
+    padding: 1rem 1.2rem;
+    margin-top: 1rem;
+}
+
+.aircraft-extended-history p {
+    font-size: 0.88rem;
+    color: #cbd5e1;
+    line-height: 1.65;
+    margin-bottom: 0.6rem;
+}
+
+.aircraft-extended-history p:last-child {
+    margin-bottom: 0;
+}
+
+/* Historical Project Register Accordion */
+.register-accordion-toggle {
+    width: 100%;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 1.25rem 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-accordion-toggle:hover {
+    border-color: var(--accent-cyan);
+    background: rgba(14, 165, 233, 0.05);
+}
+
+.register-accordion-toggle.active {
+    border-color: var(--accent-cyan);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.register-accordion-toggle .toggle-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(56, 189, 248, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-cyan);
+    transition: transform 0.3s ease;
+}
+
+.register-accordion-toggle.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.register-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-light);
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.register-accordion-content.active {
+    max-height: 3500px;
+    opacity: 1;
+    padding: 1.5rem;
+}
