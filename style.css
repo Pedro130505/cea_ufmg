@@ -5832,3 +5832,20 @@ textarea {
     opacity: 1;
     padding: 1.5rem;
 }
+
+/* ==========================================================================
+   IOS SAFARI & MOBILE TOUCH UTILITIES
+   ========================================================================== */
+:root {
+    --sat: env(safe-area-inset-top, 0px);
+    --sar: env(safe-area-inset-right, 0px);
+    --sab: env(safe-area-inset-bottom, 0px);
+    --sal: env(safe-area-inset-left, 0px);
+}
+
+html, body {
+    -webkit-tap-highlight-color: transparent;
+    padding-left: var(--sal);
+    padding-right: var(--sar);
+}
+
